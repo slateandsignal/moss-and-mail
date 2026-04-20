@@ -171,21 +171,25 @@ button { cursor: pointer; }
 
 .nav-cta {
   font-family: var(--font-type);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,0.6);
-  color: var(--white);
-  background: transparent;
-  padding: 0.55rem 1.25rem;
+  font-weight: 700;
+  border: 2px solid var(--white);
+  color: var(--plum);
+  background: var(--white);
+  padding: 0.7rem 1.6rem;
   transition: all 0.3s;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
 }
 .nav.scrolled .nav-cta {
-  border-color: var(--moss);
-  color: var(--moss);
+  border-color: var(--plum);
+  background: var(--plum);
+  color: var(--white);
+  box-shadow: none;
 }
-.nav-cta:hover { background: rgba(255,255,255,0.15); }
-.nav.scrolled .nav-cta:hover { background: var(--moss); color: var(--white); }
+.nav-cta:hover { background: var(--ivory); border-color: var(--ivory); color: var(--plum); }
+.nav.scrolled .nav-cta:hover { background: var(--dusty-coral); border-color: var(--dusty-coral); }
 
 .nav-burger {
   display: none;
@@ -486,6 +490,48 @@ h2.section-title {
   text-transform: uppercase;
   color: var(--blush);
   line-height: 1;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   VIDEO BREAK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.video-break {
+  position: relative;
+  width: 100%;
+  height: clamp(400px, 65vw, 780px);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.video-break-vid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.78) saturate(0.88);
+}
+.video-break-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(20,10,5,0.35) 100%
+  );
+}
+.video-break-caption {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-type);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  padding-bottom: 2.5rem;
+  text-align: center;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -873,6 +919,28 @@ footer {
   </div>
 </section>
 
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SNAIL VIDEO BREAK ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!--
+  VIDEO: snail video — drag IMG_4652.MOV from your Desktop into the images/ folder,
+  then rename it to: snail.mov
+  It will appear here automatically once the file is there and pushed to GitHub.
+-->
+<div class="video-break">
+  <video
+    class="video-break-vid"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="images/mud-puddle.jpg"
+  >
+    <source src="images/snail.mov" type="video/mp4">
+    <source src="images/snail.mov" type="video/quicktime">
+  </video>
+  <div class="video-break-overlay"></div>
+  <p class="video-break-caption reveal">Slow down. Look closer.</p>
+</div>
+
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ WHAT'S INSIDE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <section class="whats-inside" id="whats-inside">
   <div class="whats-inside-header prose">
@@ -973,7 +1041,7 @@ footer {
       -->
       <img
         class="about-photo-main"
-        src="images/kayli-book.jpg"
+        src="images/kayli-book.png"
         alt="Kayli Angeleaux holding the Smithsonian Natural History book — founder of Moss & Mail"
         loading="lazy"
       >
