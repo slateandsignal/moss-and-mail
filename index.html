@@ -50,22 +50,27 @@
     {
       "@type": "Question",
       "name": "What is Moss & Mail?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Moss & Mail is a monthly personal letter subscription club founded by Kayli Angeleaux in Utah. Each month, subscribers receive a curated envelope with a personal letter composed in nature and signed by hand, seed packet, recipe card, children's artwork, wax-sealed postcard with stamp, nature journaling prompt, tea bag, bookmark, and Spotify QR code." }
-    },
-    {
-      "@type": "Question",
-      "name": "Who is Moss & Mail for?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Moss & Mail is designed for stay-at-home moms, homeschooling mothers, grandmothers raising grandchildren, and any woman seeking a slower, more intentional pace of life. It makes a meaningful gift for Mother's Day, birthdays, Christmas, or just because." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Moss & Mail is a monthly letter subscription club founded by Kayli Angeleaux, largely inspired by the towering wild mountains near her home. It is a community where women can find beauty, a slower pace, and analog living." }
     },
     {
       "@type": "Question",
       "name": "What comes inside a Moss & Mail envelope?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Every Moss & Mail envelope includes a monthly letter composed in nature and signed by hand, plus an original art or photography print. The rest is a curated seasonal surprise — past envelopes have included seeds, tea, a stamped postcard, a recipe card, a nature prompt, and a bookmark. Everything is chosen slowly and with care." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Each month, subscribers receive a curated envelope with a personal letter composed in nature and signed by hand, a QR code for a Spotify playlist, a Letter to the Editor Q&A, a nature-inspired journaling prompt, a recipe card, a photo from the nature surrounding Kayli or children's artwork, and a surprise. Everything is chosen slowly and with intention." }
     },
     {
       "@type": "Question",
-      "name": "How do I subscribe to Moss & Mail?",
-      "acceptedAnswer": { "@type": "Answer", "text": "You can subscribe to Moss & Mail at mossandmail.com. Choose your subscription plan, enter your mailing address, and your first letter will be on its way." }
+      "name": "Who is Moss & Mail for?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Moss & Mail is designed for any woman seeking a slower, more intentional pace of life. Whether you are a stay-at-home mom, a woman who works outside her home, a homeschooling mother, a grandmother raising grandchildren, or a young woman desiring a less technical world — Moss & Mail is for you. It also makes a meaningful gift for Mother's Day, birthdays, Christmas, or just because." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a subscription that sends real, personal, human letters?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — that is exactly what Moss & Mail is. Before writing each letter, Kayli steps away from the noise and goes into nature to think, observe, and compose. Each letter is written with intention, signed by hand, printed on beautiful stationery, and sealed with a wax seal. Personal, unhurried, and made for you." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Moss & Mail connected to Charlotte Mason homeschooling?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Moss & Mail is deeply inspired by Charlotte Mason philosophy — nature study, living books, and the cultivation of beauty in everyday life. Each of the package components is living — an essential Charlotte Mason principle, making Moss & Mail a natural complement to a Charlotte Mason homeschool or morning basket." }
     },
     {
       "@type": "Question",
@@ -74,8 +79,8 @@
     },
     {
       "@type": "Question",
-      "name": "Is Moss & Mail related to Charlotte Mason homeschooling?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Moss & Mail is deeply inspired by Charlotte Mason philosophy — nature study, living books, and the cultivation of beauty in everyday life. The nature prompts, seed packets, and letters composed in nature are all aligned with Charlotte Mason principles, making it a natural complement to a Charlotte Mason homeschool." }
+      "name": "How do I slow down my life as a busy mom?",
+      "acceptedAnswer": { "@type": "Answer", "text": "How to slow down while working within the realities of children's near-constant needs is a lifelong art, one that Kayli has been a student of since the birth of her first child. She is no expert, but a friend willing to share ideas she has picked up along the way. As a community, we are stronger. The letter club, as well as Kayli's social media pages, are a great starting point if you want to slow down with your beautiful children." }
     }
   ]
 }
@@ -428,6 +433,29 @@ h2.section-title {
   line-height: 1.75;
   color: var(--plum);
 }
+.anchor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.anchor-list li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--plum);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.anchor-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--moss);
+  font-family: var(--font-type);
+}
 .envelope-surprise {
   max-width: 560px;
   margin: 0 auto 0;
@@ -643,6 +671,29 @@ h2.section-title {
     right: 0;
   }
   .about-photos { margin-bottom: 2rem; }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   MOSS PARALLAX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.moss-parallax {
+  background-image: url('images/moss.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: clamp(380px, 55vh, 620px);
+  position: relative;
+}
+.moss-parallax-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(72,24,39,0.08) 0%,
+    transparent 40%,
+    transparent 60%,
+    rgba(72,24,39,0.08) 100%
+  );
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -960,13 +1011,13 @@ footer {
     </h2>
     <div class="intro-rule reveal reveal-delay-2"></div>
     <p class="body-text reveal reveal-delay-2">
-      I grew up running to the mailbox. Not for bills — for the particular magic of something arriving that someone sent just for you. Words chosen with intention, on paper, that you can hold and read again.
+      I grew up running to the mailbox. I had pen pals from Argentina, Oklahoma, Virginia, and Colorado, amongst others. Holding an envelope addressed to "Kayli" from a dear friend made my heart soar! I would walk with my envelope from the mailbox to the privacy of my bedroom and relish my letter. I still have many saved in my scrapbooks.
     </p>
-    <p class="body-text reveal reveal-delay-3">
-      That magic is still there. I've never stopped believing in it. And so every month, I sit down and write — to you, specifically. Not to a subscriber. To you.
+    <p class="body-text reveal reveal-delay-3" style="margin-top: 1.75rem;">
+      As a young mother navigating what sort of childhood I wanted to create for my children, I went back to letters. My little one would finger paint or scribble next to me while I wrote an update of her life to grandparents, aunts, and uncles. Her art-packed snail mail brought others so much joy (and still does!).
     </p>
-    <p class="body-text reveal reveal-delay-4">
-      This is Moss & Mail. A monthly letter club for women who are craving something slower, something real, something that arrives in the mailbox and makes the day feel different.
+    <p class="body-text reveal reveal-delay-4" style="margin-top: 1.75rem;">
+      Now as a less-younger mother I want to bring that magic and connection to you, dear reader. And so, every month, I sit down in the wilds of my Utah mountains and write a vulnerable and honest letter to you. This is Moss & Mail. A monthly snail mail letter club for women who are yearning for something slower, something tangible, something in their mailbox — not on a screen. Something to bring magic to your day.
     </p>
   </div>
 </section>
@@ -997,21 +1048,27 @@ footer {
 <section class="whats-inside" id="whats-inside">
   <div class="whats-inside-header prose">
     <span class="eyebrow reveal">Everything fits in one envelope</span>
-    <h2 class="section-title reveal reveal-delay-1">Under one ounce.<br>Over a hundred small joys.</h2>
+    <h2 class="section-title reveal reveal-delay-1">Under one ounce.<br>Packed with intention and beauty.</h2>
   </div>
 
   <div class="envelope-anchors">
     <div class="envelope-anchor reveal">
       <span class="anchor-name">Always Inside — A Personal Letter</span>
-      <p class="anchor-desc">Composed in nature, signed by hand, on beautiful paper, sealed with wax, and addressed to you. Not a form letter. A real one — from me, to you, about something worth saying.</p>
+      <p class="anchor-desc">Composed in nature, signed by hand, on beautiful paper, sealed with wax, and addressed to you. The letter will be vulnerable and honest — the beauty I am finding, what I am struggling with, what I am mulling over. A letter from a friend.</p>
     </div>
     <div class="envelope-anchor reveal reveal-delay-1">
-      <span class="anchor-name">Always Inside — A Child's Original Artwork</span>
-      <p class="anchor-desc">Made by my children. One of a kind. The kind of thing you hold and feel something you didn't expect to feel.</p>
+      <span class="anchor-name">Always Inside — The Rest</span>
+      <ul class="anchor-list">
+        <li>A curated Spotify playlist to enjoy while opening your envelope</li>
+        <li>A "Letter to the Editor" question and answer (questions submitted by you on our social media pages)</li>
+        <li>A nature-inspired journaling prompt</li>
+        <li>A simple, nourishing recipe</li>
+        <li>A photo from the mountains or a watercolor from my children — one of a kind</li>
+      </ul>
     </div>
   </div>
   <div class="envelope-surprise reveal reveal-delay-2">
-    <p>The rest of the envelope is a surprise — chosen for the season, the month, the mood. Past envelopes have carried seeds, tea, a stamped postcard ready to send, a recipe card, a nature prompt, a bookmark. Some things come back. Some things only come once. That's part of what makes opening it feel like a gift every time.</p>
+    <p>The rest of the envelope is a surprise — chosen for the season, the month, the mood. Past envelopes have carried tea, a bookmark, or seeds. Some things come back. Some things only come once. That's part of what makes opening it feel like a gift every time.</p>
   </div>
 
   <!--
@@ -1047,7 +1104,7 @@ footer {
     <source src="images/stream.MOV" type="video/quicktime">
   </video>
   <div class="stream-parallax-overlay"></div>
-  <p class="stream-parallax-caption reveal">Find stillness in the moving water.</p>
+  <p class="stream-parallax-caption reveal">"...come into the peace of wild things…" — Wendell Berry</p>
 </div>
 
 
@@ -1076,26 +1133,31 @@ footer {
       <span class="eyebrow reveal">About Kayli</span>
       <h2 class="section-title reveal reveal-delay-1">A woman who slowed down<br>and found something worth sharing.</h2>
       <p class="body-text reveal reveal-delay-2">
-        A few years ago, I cleared our calendar. We moved somewhere with mountains and silence, and I started asking what I actually wanted my life to look like.
+        This year, I radically cleared our calendar. We moved somewhere with mountains and quiet, and I started asking myself what actually brought my soul peace.
       </p>
       <p class="body-text reveal reveal-delay-3">
-        What came back, every time: the kitchen table. The unhurried morning. The letter half-written. The child leading the pace on a walk. The garden teaching patience. Beauty as a daily practice.
+        What came back, every time: Time spent deep in nature. Slow mornings dripping with classical music. Feeding my babies nourishing meals. Tiny feet splashing in mountain streams. A garden to tend to. Reading, reading, reading. Cultivating a beautiful life, daily.
       </p>
       <p class="body-text reveal reveal-delay-4">
-        Moss & Mail grew out of that. Out of a belief that women who are tired and trying and love beautiful things deserve to be reminded: the slower life is not somewhere else. It's available right now, in whatever space you have, with whatever you have in it.
+        Moss & Mail grew out of that. Out of a belief that women who are tired but trying, and love beautiful things, deserve to be reminded: the slower life is not somewhere else. It is available right now, in whatever space you have, with whatever you have in it.
       </p>
       <p class="about-entity reveal">
-        Kayli Angeleaux is a Utah-based creative entrepreneur, slow living advocate, and founder of Moss & Mail, a monthly personal letter subscription club. She creates content at the intersection of intentional motherhood, Charlotte Mason homeschooling philosophy, and analog living — encouraging women to slow down, write more letters, and reconnect with nature and the people they love. Kayli's work is rooted in the belief that receiving a handwritten letter can change the pace of an ordinary day.
+        Kayli Angeleaux is a Utah-based creative entrepreneur, slow living advocate, and founder of Moss & Mail, a monthly handwritten letter subscription club. She creates content at the intersection of intentional motherhood, Charlotte Mason homeschooling philosophy, and analog living — encouraging women to slow down, write more letters, and reconnect with nature and the people they love. Kayli's work is rooted in the belief that receiving a handwritten letter can change the pace of an ordinary day.
       </p>
     </div>
   </div>
 </section>
 
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ MOSS PARALLAX ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="moss-parallax">
+  <div class="moss-parallax-overlay"></div>
+</div>
+
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ QUOTE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <section class="quote-section">
   <blockquote class="pullquote reveal">
     "It is the small everyday deed of ordinary folks that keep the darkness at bay.<br>Small acts of kindness and love."
-    <span class="pullquote-attribution">— often attributed to Tolkien</span>
+    <span class="pullquote-attribution">— The Hobbit Film</span>
   </blockquote>
 </section>
 
@@ -1105,7 +1167,10 @@ footer {
     <span class="eyebrow reveal">Join the letter club</span>
     <h2 class="section-title reveal reveal-delay-1">Something beautiful,<br>every month,<br>in your mailbox.</h2>
     <p class="subscribe-tagline reveal reveal-delay-2">
-      Every month, a thick envelope arrives with your name written on it by hand. Inside: a personal letter on beautiful paper, sealed with wax. A piece of original art made by my children. And a curation of seasonal extras — the kind of things you didn't know you needed until they're in your hands. Nothing mass-produced. Nothing filler. Everything chosen slowly, with care.
+      Every month, a thick envelope arrives addressed to you.
+    </p>
+    <p class="subscribe-tagline reveal reveal-delay-2">
+      The letter club will always stay small enough that my little team and I can personally take part in the preparation, filling, and mailing of every envelope. We will never use machines. Every envelope will be prepared by a loving human for you.
     </p>
 
     <p class="subscribe-price-note reveal reveal-delay-3">Monthly subscription · Ships from Utah</p>
@@ -1150,7 +1215,7 @@ footer {
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Moss & Mail is a monthly personal letter subscription club founded by Kayli Angeleaux in Utah. Each month, subscribers receive a curated envelope with a personal letter composed in nature and signed by hand, seed packet, recipe card, children's artwork, wax-sealed postcard with stamp, nature journaling prompt, tea bag, bookmark, and Spotify QR code.</p>
+          <p>Moss & Mail is a monthly letter subscription club founded by Kayli Angeleaux, largely inspired by the towering wild mountains near her home. It is a community where women can find beauty, a slower pace, and analog living.</p>
         </div>
       </div>
     </div>
@@ -1162,7 +1227,7 @@ footer {
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Every Moss & Mail envelope includes a monthly letter composed in nature and signed by hand, plus an original art or photography print. The rest is a curated seasonal surprise — past envelopes have included seeds, tea, a stamped postcard, a recipe card, a nature prompt, and a bookmark. Everything is chosen slowly and with care.</p>
+          <p>Each month, subscribers receive a curated envelope with a personal letter composed in nature and signed by hand, a QR code for a Spotify playlist, a "Letter to the Editor" Q&A, a nature-inspired journaling prompt, a recipe card, a photo from the nature surrounding Kayli or children's artwork, and a surprise. Everything is chosen slowly and with intention.</p>
         </div>
       </div>
     </div>
@@ -1174,19 +1239,19 @@ footer {
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Moss & Mail is designed for stay-at-home moms, homeschooling mothers, grandmothers raising grandchildren, and any woman seeking a slower, more intentional pace of life. If you love beautiful things and haven't had much time for them lately — this is for you. It also makes a meaningful gift for Mother's Day, birthdays, Christmas, or just because.</p>
+          <p>Moss & Mail is designed for any woman seeking a slower, more intentional pace of life. Whether you are a stay-at-home mom, a woman who works outside her home, a homeschooling mother, a grandmother raising grandchildren, or a young woman desiring a less technical world — Moss & Mail is for you. It also makes a meaningful gift for Mother's Day, birthdays, Christmas, or just because.</p>
         </div>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question" aria-expanded="false">
-        Is there a subscription that sends real personal letters?
+        Is there a subscription that sends real, personal, human letters?
         <span class="faq-icon" aria-hidden="true"></span>
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Yes — that is exactly what Moss & Mail is. Before writing each letter, Kayli steps away from the noise and goes into nature to think, observe, and compose. Each letter is written with intention, signed by hand, printed on beautiful stationery, and sealed with a wax seal. Personal, unhurried, and made for you specifically.</p>
+          <p>Yes — that is exactly what Moss & Mail is. Before writing each letter, Kayli steps away from the noise and goes into nature to think, observe, and compose. Each letter is written with intention, signed by hand, printed on beautiful stationery, and sealed with a wax seal. Personal, unhurried, and made for you.</p>
         </div>
       </div>
     </div>
@@ -1198,7 +1263,7 @@ footer {
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Moss & Mail is deeply inspired by Charlotte Mason philosophy — nature study, living books, and the cultivation of beauty in everyday life. The nature prompts, seed packets, and letters composed in nature are all aligned with Charlotte Mason principles, making Moss & Mail a natural complement to a Charlotte Mason homeschool or morning basket.</p>
+          <p>Moss & Mail is deeply inspired by Charlotte Mason philosophy — nature study, living books, and the cultivation of beauty in everyday life. Each of the package components is "living" — an essential Charlotte Mason principle, making Moss & Mail a natural complement to a Charlotte Mason homeschool or morning basket.</p>
         </div>
       </div>
     </div>
@@ -1218,11 +1283,11 @@ footer {
     <div class="faq-item">
       <button class="faq-question" aria-expanded="false">
         How do I slow down my life as a busy mom?
-        <span class="faq-icon" aria-expanded="false"></span>
+        <span class="faq-icon" aria-hidden="true"></span>
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>The slower life isn't a destination — it's a series of small, choosable moments available right now. A cup of tea. A walk where you let your child lead the pace. A letter read twice. Moss & Mail is built around this belief: that beauty, connection, and a slower life are still possible. One letter at a time.</p>
+          <p>How to slow down while working within the realities of children's near-constant needs is a lifelong art, one that Kayli has been a student of since the birth of her first child. She is no expert, but a friend willing to share ideas she has picked up along the way. As a community, we are stronger. The letter club, as well as Kayli's social media pages, are a great starting point if you want to slow down with your beautiful children.</p>
         </div>
       </div>
     </div>
@@ -1236,7 +1301,7 @@ footer {
     <div class="footer-brand">
       <span class="footer-wordmark">Moss &amp; Mail</span>
       <p class="footer-entity">
-        Moss & Mail is a monthly personal letter subscription club founded by Kayli Angeleaux in Utah. Each month, subscribers receive a curated envelope containing a personal letter composed in nature and signed by hand, a seed packet, a recipe card, an original children's artwork print, a wax-sealed postcard with stamp, a nature journaling prompt, a tea bag, a bookmark, and a Spotify QR code — all designed to slow down the pace of daily life. Moss & Mail serves stay-at-home moms, homeschooling mothers, grandmothers, and women pursuing a slower, more intentional way of living.
+        Moss & Mail is a monthly handwritten letter subscription club founded by Kayli Angeleaux in Utah. Each month, subscribers receive a curated envelope containing a handwritten letter composed in nature and signed by hand, a curated Spotify playlist, a nature-inspired journaling prompt, a simple nourishing recipe, an original photo or watercolor, and seasonal curated extras — all designed to slow down the pace of daily life. Moss & Mail serves stay-at-home moms, homeschooling mothers, grandmothers, and women pursuing a slower, more intentional way of living.
       </p>
       <div class="footer-socials">
         <a href="https://www.instagram.com/mossandmail" rel="noopener" target="_blank">Instagram</a>
