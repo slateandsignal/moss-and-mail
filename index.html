@@ -773,6 +773,64 @@ h2.section-title {
   background: var(--plum);
   color: var(--white);
 }
+
+/* Waitlist form */
+.waitlist-form {
+  margin: 2.5rem auto 0;
+  max-width: 480px;
+}
+.waitlist-form-label {
+  display: block;
+  font-family: var(--font-type);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--moss);
+  margin-bottom: 1rem;
+}
+.waitlist-input-row {
+  display: flex;
+  gap: 0;
+  border: 1.5px solid var(--plum);
+}
+.waitlist-input {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  outline: none;
+  background: var(--white);
+  color: var(--plum);
+  min-width: 0;
+}
+.waitlist-input::placeholder { color: rgba(72,24,39,0.35); }
+.waitlist-btn {
+  font-family: var(--font-type);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--plum);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem 1.4rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+.waitlist-btn:hover { background: var(--moss); }
+.waitlist-fine {
+  margin-top: 0.75rem;
+  font-family: var(--font-type);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: rgba(72,24,39,0.4);
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .waitlist-input-row { flex-direction: column; }
+  .waitlist-btn { width: 100%; padding: 0.9rem; }
+}
 .subscribe-note {
   margin-top: 1.5rem;
   font-family: var(--font-type);
@@ -1185,15 +1243,29 @@ footer {
       Remove the fallback .btn-join link below once done.
       ═══════════════════════════════════════════════════
     -->
-    <div class="shopify-buy-button-placeholder reveal reveal-delay-3">
-      <!-- SHOPIFY EMBED CODE GOES HERE -->
-      <a href="#subscribe" class="btn-join">
-        Join the Letter Club
-      </a>
+    <!-- Waitlist email capture -->
+    <div class="waitlist-form reveal reveal-delay-3">
+      <label class="waitlist-form-label" for="waitlist-email">Join the waitlist — be first to know when subscriptions open</label>
+      <div class="waitlist-input-row">
+        <input
+          class="waitlist-input"
+          type="email"
+          id="waitlist-email"
+          name="EMAIL"
+          placeholder="Your email address"
+          required
+          autocomplete="email"
+        >
+        <button class="waitlist-btn" type="button" onclick="joinWaitlist()">Join</button>
+      </div>
+      <p class="waitlist-fine">No spam, ever. Unsubscribe any time.</p>
     </div>
 
-    <p class="subscribe-note reveal">Cancel any time. No urgency language here — ever.</p>
-    <a href="#subscribe" class="gift-link reveal">
+    <div class="shopify-buy-button-placeholder reveal reveal-delay-3" style="margin-top: 2rem;">
+      <!-- SHOPIFY EMBED CODE GOES HERE — replace this section when Shopify is ready -->
+    </div>
+
+    <a href="#subscribe" class="gift-link reveal" style="margin-top: 1.5rem;">
       Give as a gift →
     </a>
   </div>
@@ -1348,6 +1420,18 @@ footer {
 <script>
 /* ── Year ── */
 document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ── Waitlist form ── */
+function joinWaitlist() {
+  var email = document.getElementById('waitlist-email').value;
+  if (!email || !email.includes('@')) {
+    document.getElementById('waitlist-email').focus();
+    return;
+  }
+  window.open('http://eepurl.com/bNykW2eCgxu', '_blank');
+  document.getElementById('waitlist-email').value = '';
+  document.querySelector('.waitlist-fine').textContent = 'Thank you — check your inbox to confirm.';
+}
 
 /* ── Nav scroll behavior ── */
 const nav = document.getElementById('nav');
