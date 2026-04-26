@@ -685,6 +685,13 @@ h2.section-title {
   height: clamp(380px, 55vh, 620px);
   position: relative;
 }
+@media (max-width: 768px), (hover: none) {
+  .moss-parallax {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+  }
+}
 .moss-parallax-overlay {
   position: absolute;
   inset: 0;
