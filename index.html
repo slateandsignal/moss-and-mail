@@ -1266,7 +1266,11 @@ footer {
         >
         <button class="waitlist-btn" type="button" onclick="joinWaitlist()">Join</button>
       </div>
-      <p class="waitlist-fine">No spam, ever. Unsubscribe any time.</p>
+      <!-- Bot protection — do not remove -->
+      <div style="position:absolute;left:-5000px;" aria-hidden="true">
+        <input type="text" id="waitlist-bot-field" name="b_0ced347425816f6636ddecf11_ab002c9324" tabindex="-1" value="">
+      </div>
+      <p class="waitlist-fine" id="waitlist-msg">No spam, ever. Unsubscribe any time.</p>
     </div>
 
     <div class="shopify-buy-button-placeholder reveal reveal-delay-3" style="margin-top: 2rem;">
@@ -1432,13 +1436,27 @@ document.getElementById('year').textContent = new Date().getFullYear();
 /* ── Waitlist form ── */
 function joinWaitlist() {
   var email = document.getElementById('waitlist-email').value;
+  var msg = document.getElementById('waitlist-msg');
   if (!email || !email.includes('@')) {
     document.getElementById('waitlist-email').focus();
     return;
   }
-  window.open('http://eepurl.com/bNykW2eCgxu', '_blank');
-  document.getElementById('waitlist-email').value = '';
-  document.querySelector('.waitlist-fine').textContent = 'Thank you — check your inbox to confirm.';
+  var botField = document.getElementById('waitlist-bot-field').value;
+  var url = 'https://us7.list-manage.com/subscribe/post-json?u=0ced347425816f6636ddecf11&id=ab002c9324&EMAIL='
+    + encodeURIComponent(email)
+    + '&b_0ced347425816f6636ddecf11_ab002c9324=' + encodeURIComponent(botField)
+    + '&c=_mcCallback';
+  window._mcCallback = function(data) {
+    if (data.result === 'success') {
+      document.getElementById('waitlist-email').value = '';
+      msg.textContent = 'You’re on the list — thank you for being here.';
+    } else {
+      msg.textContent = data.msg ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.';
+    }
+  };
+  var s = document.createElement('script');
+  s.src = url;
+  document.head.appendChild(s);
 }
 
 /* ── Nav scroll behavior ── */
