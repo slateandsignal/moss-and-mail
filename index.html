@@ -1449,7 +1449,7 @@ function joinWaitlist() {
   window._mcCallback = function(data) {
     if (data.result === 'success') {
       document.getElementById('waitlist-email').value = '';
-      msg.textContent = 'You’re on the list — thank you for being here.';
+      msg.textContent = "You’re on the list — thank you for being here.";
     } else {
       msg.textContent = data.msg ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.';
     }
