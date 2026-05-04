@@ -1,6 +1,6 @@
 # Moss & Mail — Session Starter
 **Paste this at the start of every new Claude Code session.**
-Last updated: 2026-05-03
+Last updated: 2026-05-03 (end of evening session)
 
 ---
 
@@ -74,11 +74,11 @@ All posts scheduled in Publer: **May 6 — June 12, 2026**
 
 ---
 
-## Mailchimp — DONE (form fixed May 3)
+## Mailchimp — WORKING
 - Account: Standard plan ($13/mo)
 - Welcome automation active — subject: "You're on the list — thank you for being here"
 - Domain authenticated via GoDaddy (SPF + DKIM) — emails go to inbox, not junk
-- Waitlist form on mossandmail.com: **FIXED May 3** — now uses hidden iframe POST (no more JSONP). Test: submit email on mossandmail.com, confirm it appears in Mailchimp Audience within 1 minute.
+- Waitlist form on mossandmail.com: **CONFIRMED WORKING** — direct POST to Mailchimp, opens confirmation in new tab. Emails arrive in Mailchimp (tested and confirmed with green checkmark). UX improvement (no new tab) is next session with Formspree.
 
 ---
 
@@ -108,18 +108,25 @@ All posts scheduled in Publer: **May 6 — June 12, 2026**
 ---
 
 ## Pending — What's Left To Do
-- [ ] **May 21 TikTok** — add manually in Publer (clip1-mason-jar-vertical.mp4, caption in MASTER_TASK_LIST.md)
-- [ ] **Test waitlist form** — submit real email on mossandmail.com, verify in Mailchimp
-- [ ] Shopify: confirm name + price with Kayli → say "Shopify confirmed" → Claude finishes
-- [ ] Shopify Payments: activate in Shopify admin
-- [ ] Alt text: manually add to all scheduled Publer posts (text is in CSVs)
-- [ ] Delete 2 test posts in Publer (June 30 dates) — do in Publer web UI
-- [ ] Facebook: connect to Publer when ready
-- [ ] YouTube long-form unboxing (838MB): upload manually via Publer Media Library
+
+### Do first next session:
+- [ ] **May 23 Instagram Reel** — add manually in Publer: clip3-screen-realization-vertical.mp4, caption + alt text in MASTER_TASK_LIST.md, 8:00 AM
+- [ ] **May 21 TikTok** — confirm video file is actually attached in Publer (caption is there)
+- [ ] **Schedule 13 unscheduled videos** — Claude updates CSVs, Raquel bulk imports in Publer (see MASTER_TASK_LIST.md for full list)
+- [ ] **Fix email form UX** — Claude replaces Mailchimp POST with Formspree (no new tab)
+
+### Waiting on Kayli:
+- [ ] Shopify: confirm name + price → say "Shopify confirmed" → Claude finishes
 - [ ] Google Business verification: Kayli films 3-minute video
 - [ ] Launch day video (June 8): needs to be filmed
 - [ ] Review video (June 12): needs to be filmed
-- [ ] Frame.io: set up (~$15/mo) for Raquel + Kayli to share footage
+
+### Raquel manual:
+- [ ] Alt text: add to all scheduled Publer posts (text is in CSVs)
+- [ ] Delete 2 test posts in Publer (June 30 dates)
+- [ ] Facebook: connect to Publer when ready
+- [ ] YouTube long-form unboxing (838MB): upload manually via Publer Media Library
+- [ ] Frame.io: set up (~$15/mo) for Raquel + Kayli footage sharing
 
 ---
 

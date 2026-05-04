@@ -1,5 +1,5 @@
 # Moss & Mail — Master Task List
-Last updated: 2026-05-03
+Last updated: 2026-05-03 (end of session)
 
 Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on something
 
@@ -7,19 +7,47 @@ Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on
 
 ## DO NEXT SESSION FIRST
 
-👤 **May 21 TikTok — add manually in Publer** — Create TikTok post, May 21 at 10:00am, attach clip1-mason-jar-vertical.mp4, caption: "Slow living content creation: one mason jar, one fairy book, one lip balm, and zero tripod. We're making it work. #slowliving #homeschool #charlottemason #bookreview #naturalstudy"
+👤 **May 23 Instagram Reel — add manually in Publer**
+- File: `/Users/raquelcovey/Projects/MossAndMail/clips/book-review/clip3-screen-realization-vertical.mp4`
+- Caption: "Slow living with kids — when I realized how often we were reaching for a screen to answer a question we could have answered with a book. #slowliving #intentionalmotherhood #charlottemason #analoglife #homeschool"
+- Date: May 23, 2026 at 8:00 AM
+- Alt text: `Mom realizing screens replaced books for nature questions — slow living with kids intentional motherhood — Moss & Mail`
 
-👤 **Test waitlist form on mossandmail.com** — Hard refresh (Cmd+Shift+R), enter a real email, hit Join. Confirm "You're on the list" appears AND email shows up in Mailchimp → Audience → Contacts within ~1 minute. Tell Kayli it's fixed.
+👤 **May 21 TikTok — confirm it's there** — Check Publer. Caption: "Slow living content creation: one mason jar, one fairy book, one lip balm, and zero tripod. We're making it work." It was showing in the API but confirm the video file is attached correctly.
+
+👤 **Test waitlist form** — Submit a real email on mossandmail.com, confirm it appears in Mailchimp → Audience → Contacts. (Form now uses direct POST to Mailchimp — opens confirmation in new tab, which is working but not ideal UX. Will fix next session with Formspree.)
+
+---
+
+## NEXT SESSION — CLAUDE HANDLES
+
+🤖 **Schedule all unscheduled content via CSV** — Update the Instagram + TikTok CSVs with these videos (captions already exist in MOSS_AND_MAIL_MASTER.html):
+- `A simpler life.MP4` — use existing caption from HTML
+- `Breakfast Time Final.mp4`
+- `Pure Imagination.mov`
+- `Living.MP4`
+- `Sunday reset final.mov`
+- `Iced matcha cuz the world Is crazy! With music.MP4` (with music version)
+- `Iced Matcha Late cuz the world IS crazy- no music.mov` (no music version — schedule both, spaced apart)
+- `Time lapse Clean Up w:music.mov`
+- `Moments.MP4`
+- `Unboxing Short FINAL.mp4` — June 8 LAUNCH DAY
+- `Listen final.mp4`
+- `I love it even more FINAL.MP4`
+- `Matcha Mornings FINAL.MP4`
+- `What felt like an ending-final.MP4` (from subfolder)
+
+🤖 **Fix email form UX** — Replace Mailchimp direct POST with Formspree so form submits without opening new tab. Simple fix, ~10 min.
+
+🤖 **Update MOSS_AND_MAIL_MASTER.html** — Add current Publer schedule as a live log. Make it the daily command center.
 
 ---
 
 ## WAITING ON KAYLI
 
-⏳ **Shopify confirmation** — Once Kayli confirms: is "Snail Mail Club" the right product name? Is $12.99/month the right price? Just say "Shopify confirmed" and Claude finishes the rest (Seal Subscriptions billing rule, Shopify Payments, Draft → Active, add photos).
+⏳ **Shopify confirmation** — Say "Shopify confirmed" once Kayli confirms: name = "Snail Mail Club", price = $12.99/month. Claude finishes: Seal Subscriptions billing, Shopify Payments, Draft → Active, add photos.
 
-⏳ **Affiliate links in YouTube descriptions** — Links already added from this session using the 6 affiliate links Kayli provided. Book Review video is private/scheduled for May 27 — confirm with Kayli when it goes live that the description looks correct.
-
-⏳ **Google Business verification** — Kayli needs to film 3-minute video
+⏳ **Google Business verification** — Kayli films 3-minute video
 
 ⏳ **Launch day video (June 8)** — needs to be filmed
 
@@ -29,63 +57,34 @@ Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on
 
 ## RAQUEL TO-DOS (manual steps)
 
-👤 Alt text — manually add to all scheduled Publer posts (Edit → Advanced Settings → Write Alt Text). Alt text is in the CSVs.
+👤 **Alt text** — manually add to all scheduled Publer posts (Edit → Advanced Settings → Write Alt Text). Alt text is in the CSVs.
 
-👤 Delete 2 test posts in Publer (June 30 dates) — do manually in Publer web UI
+👤 **Delete 2 test posts in Publer** (June 30 dates) — do in Publer web UI
 
-👤 Facebook — connect to Publer when ready
+👤 **Facebook** — connect to Publer when ready
 
-👤 YouTube long-form unboxing (838MB) — upload manually via Publer Media Library (too large for API)
+👤 **YouTube long-form unboxing (838MB)** — upload manually via Publer Media Library
 
-👤 **KAYLI — Phone orientation for video:** Shoot YouTube long-form HORIZONTAL (landscape/16:9). Shoot TikTok, Reels, and YouTube Shorts VERTICAL (portrait/9:16).
-
-👤 Set up Frame.io (~$15/month) — shared workspace for Raquel + Kayli to exchange footage, leave comments/notes, and assign tasks
-
-👤 **KAYLI — Review book review clips in Publer** — May 23 (Instagram Reel), May 24 (YouTube Short). Edit captions if needed before they publish.
-
----
-
-## SHOPIFY — FINISH WHEN KAYLI CONFIRMS
-
-⏳ Confirm: "Snail Mail Club" name + $12.99/month price
-  - Product already created in Shopify as DRAFT (ID: 8821049327794, Variant ID: 47383030825138)
-  - Say "Shopify confirmed" → Claude does the rest in 5 minutes
-⏳ Set up Seal Subscriptions billing rule (monthly recurring, linked to product)
-⏳ Activate Shopify Payments
-⏳ Change product from Draft → Active
-⏳ Add product photos to Shopify listing
+👤 **Frame.io** — set up (~$15/mo) for Raquel + Kayli footage sharing
 
 ---
 
 ## COMPLETED ✅
 
-✅ All Instagram + TikTok posts scheduled in Publer (May 6 — June 12)
+✅ Website text visible — fixed reveal animation (progressive enhancement, text shows without JS)
+✅ Waitlist email form working — submits to Mailchimp, confirmed with green checkmark
+✅ All Instagram + TikTok posts scheduled in Publer (May 4 — June 17)
 ✅ YouTube CSV created with 8 entries
 ✅ Alt text added to all posts in CSV
-✅ CLAUDE.md standing rules file created + updated with Shopify API, end-of-session protocol, scheduling rule
+✅ CLAUDE.md updated with mandatory session-start protocol and no-rewrite rules
 ✅ /create-post slash command created
 ✅ /clip-video slash command created
 ✅ ffmpeg installed
 ✅ Whisper installed
 ✅ YouTube Data API connected
 ✅ YouTube OAuth set up (youtube_token.json saved)
-✅ "We sold Walnut Hill" description + tags updated in YouTube Studio
-✅ Beaver Hike transcribed
-✅ Beaver Hike Short cut (needs music)
-✅ Beaver Hike SRT file generated
-✅ All platform content written for Beaver Hike
+✅ Beaver Hike + Book Review YouTube descriptions updated with affiliate links, cross-links, tags
+✅ Pinned comment on Beaver Hike with all book affiliate links
 ✅ Mailchimp fully set up — welcome email, domain auth, automation active
-✅ Beaver Book Review video clipped — 3 shorts cut and scheduled in Publer
-✅ Publer API key regenerated (new key saved to CLAUDE.md)
-✅ 3 book review clips scheduled in Publer — TikTok May 21, Instagram Reel May 23, YouTube Short May 24
-✅ YouTube Shorts API quirk documented — schedule YouTube Shorts manually via Create button in Publer UI
-✅ Publer duplicates cleaned — May 23 and May 24 extra posts deleted
-✅ Beaver Hike YouTube description updated — affiliate links, cross-link to Book Review, Charlotte Mason SEO tags
-✅ Pinned comment posted on Beaver Hike with all book affiliate links
-✅ Book Review YouTube description updated — affiliate links, cross-link to Beaver Hike
-✅ All 6 affiliate links added to beaver-all-platform-content.md and beaver-book-review-all-platform-content.md
 ✅ Shopify product created (Snail Mail Club, $12.99/month, Draft) — ID: 8821049327794
-✅ Shopify Admin API token saved to CLAUDE.md
-✅ Website waitlist form fixed — replaced broken JSONP with iframe POST to Mailchimp (pushed to GitHub Pages)
-✅ SESSION_STARTER.md fully updated to reflect current state
-✅ ~~Google Drive shared folder~~ — no longer needed
+✅ 3 book review clips scheduled in Publer — TikTok May 21, Instagram Reel May 23 (needs re-add), YouTube Short May 24
