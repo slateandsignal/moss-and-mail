@@ -319,9 +319,11 @@ button { cursor: pointer; }
    SCROLL REVEAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .reveal {
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+.reveal.will-animate {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.85s ease, transform 0.85s ease;
 }
 .reveal.visible {
   opacity: 1;
@@ -1476,6 +1478,7 @@ nav.querySelectorAll('.nav-links a').forEach(link => {
 
 /* ── Scroll reveal ── */
 const revealEls = document.querySelectorAll('.reveal');
+revealEls.forEach(el => el.classList.add('will-animate'));
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1483,7 +1486,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 revealEls.forEach(el => revealObserver.observe(el));
 
 /* ── FAQ accordion ── */
