@@ -1443,17 +1443,20 @@ footer {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 /* ── Waitlist form ── */
-document.getElementById(‘waitlist-form’).addEventListener(‘submit’, function(e) {
-  var email = document.getElementById(‘waitlist-email’).value;
-  var msg = document.getElementById(‘waitlist-msg’);
-  if (!email || !email.includes(‘@’)) {
-    e.preventDefault();
-    document.getElementById(‘waitlist-email’).focus();
-    return;
-  }
-  document.getElementById(‘waitlist-email’).value = ‘’;
-  msg.textContent = "You’re on the list — thank you for being here.";
-});
+var _wf = document.getElementById(‘waitlist-form’);
+if (_wf) {
+  _wf.addEventListener(‘submit’, function(e) {
+    var email = document.getElementById(‘waitlist-email’).value;
+    var msg = document.getElementById(‘waitlist-msg’);
+    if (!email || !email.includes(‘@’)) {
+      e.preventDefault();
+      document.getElementById(‘waitlist-email’).focus();
+      return;
+    }
+    document.getElementById(‘waitlist-email’).value = ‘’;
+    msg.textContent = "You’re on the list — thank you for being here.";
+  });
+}
 
 /* ── Nav scroll behavior ── */
 const nav = document.getElementById('nav');
