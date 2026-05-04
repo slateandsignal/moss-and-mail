@@ -1260,8 +1260,7 @@ footer {
         id="waitlist-form"
         action="https://us7.list-manage.com/subscribe/post?u=0ced347425816f6636ddecf11&amp;id=ab002c9324"
         method="post"
-        target="mc_embed_frame"
-        novalidate
+        target="_blank"
       >
         <div class="waitlist-input-row">
           <input
@@ -1446,29 +1445,11 @@ document.getElementById('year').textContent = new Date().getFullYear();
 /* ── Waitlist form ── */
 var _wf = document.getElementById(‘waitlist-form’);
 if (_wf) {
-  _wf.addEventListener(‘submit’, function(e) {
-    e.preventDefault();
+  _wf.addEventListener(‘submit’, function() {
     var email = document.getElementById(‘waitlist-email’).value.trim();
-    var msg = document.getElementById(‘waitlist-msg’);
-    if (!email || !email.includes(‘@’)) {
-      document.getElementById(‘waitlist-email’).focus();
-      return;
-    }
-    msg.textContent = ‘Adding you to the list…’;
-    var cbName = ‘mc_cb_’ + Date.now();
-    window[cbName] = function(data) {
-      delete window[cbName];
-      if (data.result === ‘success’) {
-        document.getElementById(‘waitlist-email’).value = ‘’;
-        msg.textContent = "You’re on the list — thank you for being here.";
-      } else {
-        msg.textContent = data.msg ? data.msg.replace(/<[^>]+>/g, ‘’) : ‘Something went wrong — please try again.’;
-      }
-    };
-    var s = document.createElement(‘script’);
-    s.src = ‘https://us7.list-manage.com/subscribe/post-json?u=0ced347425816f6636ddecf11&id=ab002c9324&EMAIL=’
-      + encodeURIComponent(email) + ‘&c=’ + cbName;
-    document.body.appendChild(s);
+    if (!email || !email.includes(‘@’)) return;
+    document.getElementById(‘waitlist-email’).value = ‘’;
+    document.getElementById(‘waitlist-msg’).textContent = "You’re on the list — thank you for being here.";
   });
 }
 
