@@ -1254,7 +1254,7 @@ footer {
       ═══════════════════════════════════════════════════
     -->
     <!-- Waitlist email capture -->
-    <div class="waitlist-form reveal reveal-delay-3">
+    <div class="waitlist-form reveal reveal-delay-3" id="waitlist-wrap">
       <label class="waitlist-form-label" for="waitlist-email">Join the waitlist — be first to know when subscriptions open</label>
       <form
         id="waitlist-form"
@@ -1281,6 +1281,10 @@ footer {
       </form>
       <iframe name="mc_embed_frame" style="display:none;" title="subscribe" aria-hidden="true"></iframe>
       <p class="waitlist-fine" id="waitlist-msg">No spam, ever. Unsubscribe any time.</p>
+      <div id="waitlist-success" style="display:none; padding: 1.5rem 0; text-align:center;">
+        <p style="font-family:'Beth Ellen',cursive; font-size:1.4rem; color:var(--moss); margin-bottom:0.5rem;">You're on the list.</p>
+        <p style="font-family:'Courier Prime',monospace; font-size:0.85rem; color:var(--plum); opacity:0.8;">Thank you for being here. We'll be in touch soon.</p>
+      </div>
     </div>
 
     <div class="shopify-buy-button-placeholder reveal reveal-delay-3" style="margin-top: 2rem;">
@@ -1453,8 +1457,14 @@ if (_wf) {
       document.getElementById(‘waitlist-email’).focus();
       return;
     }
-    document.getElementById(‘waitlist-email’).value = ‘’;
-    document.getElementById(‘waitlist-msg’).textContent = "Thank you for subscribing — we’ll be in touch soon.";
+    var label = _wf.previousElementSibling;
+    var form = document.getElementById(‘waitlist-form’);
+    var msg = document.getElementById(‘waitlist-msg’);
+    var success = document.getElementById(‘waitlist-success’);
+    if (label) label.style.display = ‘none’;
+    form.style.display = ‘none’;
+    msg.style.display = ‘none’;
+    success.style.display = ‘block’;
   });
 }
 
