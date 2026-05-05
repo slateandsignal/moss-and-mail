@@ -1260,7 +1260,7 @@ footer {
         id="waitlist-form"
         action="https://us7.list-manage.com/subscribe/post?u=0ced347425816f6636ddecf11&amp;id=ab002c9324"
         method="post"
-        target="_blank"
+        target="mc_embed_frame"
       >
         <div class="waitlist-input-row">
           <input
@@ -1279,7 +1279,8 @@ footer {
           <input type="text" name="b_0ced347425816f6636ddecf11_ab002c9324" tabindex="-1" value="">
         </div>
       </form>
-<p class="waitlist-fine" id="waitlist-msg">No spam, ever. Unsubscribe any time.</p>
+      <iframe name="mc_embed_frame" style="display:none;" title="subscribe" aria-hidden="true"></iframe>
+      <p class="waitlist-fine" id="waitlist-msg">No spam, ever. Unsubscribe any time.</p>
     </div>
 
     <div class="shopify-buy-button-placeholder reveal reveal-delay-3" style="margin-top: 2rem;">
@@ -1445,11 +1446,15 @@ document.getElementById('year').textContent = new Date().getFullYear();
 /* ── Waitlist form ── */
 var _wf = document.getElementById(‘waitlist-form’);
 if (_wf) {
-  _wf.addEventListener(‘submit’, function() {
+  _wf.addEventListener(‘submit’, function(e) {
     var email = document.getElementById(‘waitlist-email’).value.trim();
-    if (!email || !email.includes(‘@’)) return;
+    if (!email || !email.includes(‘@’)) {
+      e.preventDefault();
+      document.getElementById(‘waitlist-email’).focus();
+      return;
+    }
     document.getElementById(‘waitlist-email’).value = ‘’;
-    document.getElementById(‘waitlist-msg’).textContent = "You’re on the list — thank you for being here.";
+    document.getElementById(‘waitlist-msg’).textContent = "Thank you for subscribing — we’ll be in touch soon.";
   });
 }
 
