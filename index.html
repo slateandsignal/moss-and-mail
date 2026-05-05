@@ -1451,20 +1451,24 @@ document.getElementById('year').textContent = new Date().getFullYear();
 var _wf = document.getElementById(‘waitlist-form’);
 if (_wf) {
   _wf.addEventListener(‘submit’, function(e) {
-    var email = document.getElementById(‘waitlist-email’).value.trim();
+    e.preventDefault();
+    var emailEl = document.getElementById(‘waitlist-email’);
+    var email = emailEl.value.trim();
     if (!email || !email.includes(‘@’)) {
-      e.preventDefault();
-      document.getElementById(‘waitlist-email’).focus();
+      emailEl.focus();
       return;
     }
-    var label = _wf.previousElementSibling;
-    var form = document.getElementById(‘waitlist-form’);
-    var msg = document.getElementById(‘waitlist-msg’);
+    var wrap = document.getElementById(‘waitlist-wrap’);
     var success = document.getElementById(‘waitlist-success’);
-    if (label) label.style.display = ‘none’;
-    form.style.display = ‘none’;
-    msg.style.display = ‘none’;
+    wrap.innerHTML = ‘’;
+    wrap.appendChild(success);
     success.style.display = ‘block’;
+    var body = new URLSearchParams();
+    body.append(‘EMAIL’, email);
+    body.append(‘b_0ced347425816f6636ddecf11_ab002c9324’, ‘’);
+    fetch(‘https://us7.list-manage.com/subscribe/post?u=0ced347425816f6636ddecf11&id=ab002c9324’, {
+      method: ‘POST’, body: body, mode: ‘no-cors’
+    });
   });
 }
 
