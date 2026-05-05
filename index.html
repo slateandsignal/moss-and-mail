@@ -1281,10 +1281,10 @@ footer {
       </form>
       <iframe name="mc_embed_frame" style="display:none;" title="subscribe" aria-hidden="true"></iframe>
       <p class="waitlist-fine" id="waitlist-msg">No spam, ever. Unsubscribe any time.</p>
-      <div id="waitlist-success" style="display:none; padding: 1.5rem 0; text-align:center;">
-        <p style="font-family:'Beth Ellen',cursive; font-size:1.4rem; color:var(--moss); margin-bottom:0.5rem;">You're on the list.</p>
-        <p style="font-family:'Courier Prime',monospace; font-size:0.85rem; color:var(--plum); opacity:0.8;">Thank you for being here. We'll be in touch soon.</p>
-      </div>
+    </div>
+    <div id="waitlist-success" style="display:none; padding: 1.5rem 0; text-align:center;">
+      <p style="font-family:'Beth Ellen',cursive; font-size:1.4rem; color:var(--moss); margin-bottom:0.5rem;">You're on the list.</p>
+      <p style="font-family:'Courier Prime',monospace; font-size:0.85rem; color:var(--plum); opacity:0.8;">Thank you for being here. We'll be in touch soon.</p>
     </div>
 
     <div class="shopify-buy-button-placeholder reveal reveal-delay-3" style="margin-top: 2rem;">
@@ -1452,17 +1452,13 @@ var _wf = document.getElementById(‘waitlist-form’);
 if (_wf) {
   _wf.addEventListener(‘submit’, function(e) {
     e.preventDefault();
-    var emailEl = document.getElementById(‘waitlist-email’);
-    var email = emailEl.value.trim();
+    var email = document.getElementById(‘waitlist-email’).value.trim();
     if (!email || !email.includes(‘@’)) {
-      emailEl.focus();
+      document.getElementById(‘waitlist-email’).focus();
       return;
     }
-    var wrap = document.getElementById(‘waitlist-wrap’);
-    var success = document.getElementById(‘waitlist-success’);
-    wrap.innerHTML = ‘’;
-    wrap.appendChild(success);
-    success.style.display = ‘block’;
+    document.getElementById(‘waitlist-wrap’).style.display = ‘none’;
+    document.getElementById(‘waitlist-success’).style.display = ‘block’;
     var body = new URLSearchParams();
     body.append(‘EMAIL’, email);
     body.append(‘b_0ced347425816f6636ddecf11_ab002c9324’, ‘’);
