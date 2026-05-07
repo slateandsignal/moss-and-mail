@@ -14,7 +14,7 @@ Every single session, before responding to any request, Claude MUST run all of t
 ### Step 2 — Check live Publer schedule
 Run this EVERY session before touching anything in Publer:
 ```
-curl -s "https://app.publer.com/api/v1/posts?limit=100" -H "Authorization: Bearer-API 6059e2530c0d00aaf78201d76f970fdf8938eca21d8a01d2" -H "Publer-Workspace-Id: 69ee4e131454f4622d3ef523"
+curl -s "https://app.publer.com/api/v1/posts?limit=100" -H "Authorization: Bearer-API d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b" -H "Publer-Workspace-Id: 69ee4e131454f4622d3ef523"
 ```
 Parse the `posts` key (not `data`). Sort by `scheduled_at`. Show Raquel what's live before doing anything.
 
@@ -52,6 +52,18 @@ Processed/clipped versions: `/Users/raquelcovey/Projects/MossAndMail/clips/`
 Book review clips specifically: `/Users/raquelcovey/Projects/MossAndMail/clips/book-review/`
 
 Both iced matcha videos are intentional — schedule both, spaced apart. Do not treat as duplicates.
+
+---
+
+## ⚠️ CSV VERSIONING — MANDATORY EVERY TIME A CSV CHANGES
+
+Every time any Publer CSV is created or updated, Claude MUST:
+1. Copy the OLD csv into `/Users/raquelcovey/Projects/MossAndMail/csv-archive/` with the date appended — e.g. `MossAndMail_Publer_Instagram_2026-05-05.csv`
+2. Save the NEW csv as the standard filename — e.g. `MossAndMail_Publer_Instagram.csv`
+3. Note in SESSION_STARTER.md what changed and when
+
+This allows Publer to be fully restored from the archive if the schedule is ever corrupted.
+Archive folder: `/Users/raquelcovey/Projects/MossAndMail/csv-archive/`
 
 ---
 
@@ -107,7 +119,7 @@ NEVER schedule without first running the Publer API check above and comparing ag
 ## API Keys
 
 ### Publer
-Key: 6059e2530c0d00aaf78201d76f970fdf8938eca21d8a01d2
+Key: d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b
 Workspace ID: 69ee4e131454f4622d3ef523
 IG Account ID: 69ee548a578cfba22c490081
 TikTok Account ID: 69ee5498b7b333b553b35bb2
