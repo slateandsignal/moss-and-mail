@@ -7,15 +7,22 @@ Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on
 
 ## DO NEXT SESSION FIRST
 
-👤 **May 23 Instagram Reel — add manually in Publer**
-- File: `/Users/raquelcovey/Projects/MossAndMail/clips/book-review/clip3-screen-realization-vertical.mp4`
-- Caption: "Slow living with kids — when I realized how often we were reaching for a screen to answer a question we could have answered with a book. #slowliving #intentionalmotherhood #charlottemason #analoglife #homeschool"
-- Date: May 23, 2026 at 8:00 AM
-- Alt text: `Mom realizing screens replaced books for nature questions — slow living with kids intentional motherhood — Moss & Mail`
+🤖 **Write captions for Garden/food folder** — 23 files in `/Users/raquelcovey/Projects/MossAndMail/Garden, food and cold sores/`. PDF description read and understood. Claude ready — just say go.
 
-👤 **May 21 TikTok — confirm it's there** — Check Publer. Caption: "Slow living content creation: one mason jar, one fairy book, one lip balm, and zero tripod. We're making it work." It was showing in the API but confirm the video file is attached correctly.
+👤 **YouTube banner** — Kayli to shoot real photos/footage first. Claude will design in Canva using real assets once available.
 
-👤 **Test waitlist form** — Submit a real email on mossandmail.com, confirm it appears in Mailchimp → Audience → Contacts. (Form now uses direct POST to Mailchimp — opens confirmation in new tab, which is working but not ideal UX. Will fix next session with Formspree.)
+👤 **Facebook custom username** — check periodically in Facebook settings. When available, tell Claude and website link updates in 30 seconds.
+
+✅ **Facebook page connected to Publer** — Done May 6.
+✅ **Website Facebook + YouTube links fixed** — Facebook now uses real URL; YouTube corrected to @kayliangeleaux. Live May 7.
+✅ **Linktree complete** — All platforms linked: TikTok, Instagram, YouTube, Facebook, Pinterest, Email Sign Up (→ mossandmail.com), website.
+✅ **Full link audit complete** — YouTube cross-links (Beaver Hike ↔ Book Review), affiliate links, Linktree, website all verified May 7.
+✅ **Garden/food folder inventoried** — 23 files read + PDF description reviewed. Content plan ready.
+✅ **Facebook page connected to Publer** — Done May 6.
+✅ **May 21 TikTok confirmed** — clip1-mason-jar-vertical.mp4 attached in Publer.
+✅ **May 23 Instagram Reel added** — clip3-screen-realization-vertical.mp4 scheduled 8:00 AM in Publer.
+✅ **Publer account upgraded** — now accommodates all social platforms.
+✅ **Waitlist form fully working** — submits to Mailchimp silently, shows "You're on the list" in-page. Confirmed working May 5. Root cause was curly/smart quotes in JS.
 
 ---
 
@@ -37,7 +44,7 @@ Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on
 - `Matcha Mornings FINAL.MP4`
 - `What felt like an ending-final.MP4` (from subfolder)
 
-🤖 **Fix email form UX** — Replace Mailchimp direct POST with Formspree so form submits without opening new tab. Simple fix, ~10 min.
+✅ **Fix email form UX** — Form now submits silently to Mailchimp via hidden iframe, shows "You're on the list" in-page. No new tab. Root cause was curly/smart quotes in JS (looked identical to straight quotes but broke browser parsing). Fixed May 4.
 
 🤖 **Update MOSS_AND_MAIL_MASTER.html** — Add current Publer schedule as a live log. Make it the daily command center.
 
@@ -45,7 +52,7 @@ Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on
 
 ## WAITING ON KAYLI
 
-⏳ **Shopify confirmation** — Say "Shopify confirmed" once Kayli confirms: name = "Snail Mail Club", price = $12.99/month. Claude finishes: Seal Subscriptions billing, Shopify Payments, Draft → Active, add photos.
+⏳ **Shopify — partially updated** — Name changed to "Snail Mail Letter Subscription", price updated to $11.00 domestic / $12.70 international (May 5). Still needed: Seal Subscriptions billing rule, Shopify Payments activation, Draft → Active, add product photos.
 
 ⏳ **Google Business verification** — Kayli films 3-minute video
 
