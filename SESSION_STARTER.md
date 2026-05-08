@@ -1,6 +1,6 @@
 # Moss & Mail — Session Starter
 **Paste this at the start of every new Claude Code session.**
-Last updated: 2026-05-07 (end of session)
+Last updated: 2026-05-07 (end of session — evening)
 
 ---
 
@@ -149,6 +149,9 @@ Full details: /Users/raquelcovey/Projects/Consulting/SESSION_STARTER.md
 ## Pending — What's Left To Do
 
 ### Do first next session:
+- [ ] Misc May 7 content — WAITING ON KAYLI EDITS. When edits return: update captions in HTML, add to CSVs, schedule. Google Doc: https://docs.google.com/document/d/1r4vlJDWptNRYeOCLYBUb30FlYU9UmMZe-cQCOp0AYS0
+- [ ] Move Google Doc into shared Kayli folder and send to her (Raquel does this)
+- [ ] Upload listen-looped-1hour-youtube.mp4 to YouTube — file at clips/listen-looped-1hour-youtube.mp4, title: "Beaver Dam Water Sounds — 1 Hour of Nature Sounds for Focus, Sleep & Relaxation"
 - [ ] YouTube banner — Kayli to shoot real photos/footage for it; Claude will design using real assets once ready
 - [ ] Canva carousel workflow — upload real photos to Canva, Claude places them + writes copy via MCP
 - [ ] Write captions for Garden/food folder content (23 files) — Claude ready to go, just say go
@@ -157,14 +160,17 @@ Full details: /Users/raquelcovey/Projects/Consulting/SESSION_STARTER.md
 ### Build next session:
 - [ ] Google Drive Analytics folder + Weekly Performance Report sheet
 - [ ] Sunday analytics agent (Publer CSV export → Drive → auto-report)
+- [ ] GA4 + analytics report — REMIND RAQUEL ~June 7, 2026. Add Google Analytics to website, then build combined website + social weekly report.
 
 ### Waiting on Kayli:
+- [ ] Misc May 7 captions — Google Doc sent for her edits
 - [ ] Facebook cover photo — needs envelope content shot (820×312px)
 - [ ] Google Business verification: Kayli films 3-minute video
 - [ ] Launch day video (June 8): needs to be filmed
 - [ ] Review video (June 12): needs to be filmed
 
 ### Raquel manual:
+- [ ] Move May 7 Google Doc into shared Kayli folder and send it to her
 - [ ] Alt text: add to all scheduled Publer posts (text is in CSVs)
 - [ ] Delete 2 test posts in Publer (June 30 dates)
 - [ ] YouTube long-form unboxing (838MB): upload manually via Publer Media Library

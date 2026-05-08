@@ -7,11 +7,19 @@ Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on
 
 ## DO NEXT SESSION FIRST
 
+⏳ **Misc May 7 content — waiting on Kayli edits** — 7 videos, captions written, Google Doc sent to Kayli. When edits come back: update MOSS_AND_MAIL_MASTER.html, add to CSVs, schedule. Looped Listen.mp4 files already in clips/. Weighing envelope holds until June 8 launch.
+
+👤 **Move May 7 Google Doc into shared Kayli folder** — Raquel does this. Doc: https://docs.google.com/document/d/1r4vlJDWptNRYeOCLYBUb30FlYU9UmMZe-cQCOp0AYS0
+
+🤖 **Upload 1-hour beaver dam audio to YouTube** — file at clips/listen-looped-1hour-youtube.mp4. Title: "Beaver Dam Water Sounds — 1 Hour of Nature Sounds for Focus, Sleep & Relaxation"
+
 🤖 **Write captions for Garden/food folder** — 23 files in `/Users/raquelcovey/Projects/MossAndMail/Garden, food and cold sores/`. PDF description read and understood. Claude ready — just say go.
 
 👤 **YouTube banner** — Kayli to shoot real photos/footage first. Claude will design in Canva using real assets once available.
 
 👤 **Facebook custom username** — check periodically in Facebook settings. When available, tell Claude and website link updates in 30 seconds.
+
+🤖 **GA4 + analytics report — remind Raquel ~June 7, 2026** — add Google Analytics to mossandmail.com (one script tag in index.html), then build combined website + social weekly report once data is collecting.
 
 ✅ **Facebook page connected to Publer** — Done May 6.
 ✅ **Website Facebook + YouTube links fixed** — Facebook now uses real URL; YouTube corrected to @kayliangeleaux. Live May 7.

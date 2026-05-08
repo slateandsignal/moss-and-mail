@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Google_Drive__search_files",
+      "mcp__claude_ai_Google_Drive__list_recent_files",
+      "mcp__claude_ai_Google_Drive__read_file_content",
+      "mcp__claude_ai_Google_Drive__download_file_content",
+      "mcp__claude_ai_Google_Drive__get_file_metadata",
+      "mcp__claude_ai_Canva__list-brand-kits",
+      "mcp__claude_ai_Canva__search-designs",
+      "mcp__claude_ai_Canva__get-design",
+      "mcp__claude_ai_Canva__get-design-content",
+      "mcp__claude_ai_Canva__get-design-pages",
+      "mcp__claude_ai_Canva__get-design-thumbnail",
+      "mcp__claude_ai_Canva__list-comments",
+      "Bash(ffprobe *)",
+      "Bash(curl -s \"https://app.publer.com/api/v1/posts*\")"
+    ]
+  }
+}
