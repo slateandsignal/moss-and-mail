@@ -25,7 +25,7 @@ Last updated: 2026-05-07 (end of session — evening)
 | Instagram | Live @mossandmail — connected to Publer |
 | TikTok | Live @mossandmail — connected to Publer |
 | YouTube | Live @kayliangeleaux — connected to Publer |
-| Facebook | Business Page LIVE — "Moss & Mail" — NOT yet connected to Publer |
+| Facebook | Business Page LIVE — "Moss & Mail" — connected to Publer ✅ |
 | Pinterest | Handle claimed — NOT connected to Publer |
 | Linktree | Live — connected to all active platforms |
 | Metricool | NOT IN USE — dropped due to platform limitations. Publer only. |
@@ -39,8 +39,8 @@ Last updated: 2026-05-07 (end of session — evening)
 - Contact email: kayli.angeleaux@mossandmail.com ✅
 - First post: snail video ✅
 - Cover photo: MISSING — needs envelope content shot (820×312px)
-- Publer connection: PENDING — do next session
-- Linktree: needs Facebook page URL added
+- Publer connection: ✅ Connected May 6
+- Linktree: ✅ Facebook URL added May 7
 
 ---
 
