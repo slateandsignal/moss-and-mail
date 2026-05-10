@@ -7,6 +7,16 @@ Key: ✅ Done | 🤖 Claude handles | 👤 Raquel/Kayli must do | ⏳ Waiting on
 
 ## DO NEXT SESSION FIRST
 
+✅ **Origin story video — PUBLISHED** — "We Left Walnut Hill — How We Found Our Way Home" — https://youtu.be/J5g2ajONOz4. Card at 1:27 → Walnut Hill. End screen set. Kayli approved.
+
+🤖 **Clip 3 origin story shorts** — Source: /Users/raquelcovey/Downloads/Origin Story Long(Video).mp4. Timestamps: 0:00-1:00, 2:13-3:00, 7:13-8:00. Use /clip-video. Then write captions + schedule in Publer.
+
+👤 **Origin story thumbnail** — Raquel making in Canva. 2 images (old house + origin footage). Text: "Why We Really Left". No action needed from Claude until done.
+
+⏳ **Instagram short formatted** — clips/origin-story-part2-instagram.mp4 — Raquel needs to confirm Kayli is in frame, then schedule in Publer.
+
+⏳ **TikTok short** — Raquel has file, already sized. Schedule in Publer when ready.
+
 ⏳ **Misc May 7 content — waiting on Kayli edits** — 7 videos, captions written, Google Doc sent to Kayli. When edits come back: update MOSS_AND_MAIL_MASTER.html, add to CSVs, schedule. Looped Listen.mp4 files already in clips/. Weighing envelope holds until June 8 launch.
 
 👤 **Move May 7 Google Doc into shared Kayli folder** — Raquel does this. Doc: https://docs.google.com/document/d/1r4vlJDWptNRYeOCLYBUb30FlYU9UmMZe-cQCOp0AYS0

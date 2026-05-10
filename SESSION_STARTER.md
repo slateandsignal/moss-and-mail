@@ -149,11 +149,11 @@ Full details: /Users/raquelcovey/Projects/Consulting/SESSION_STARTER.md
 ## Pending — What's Left To Do
 
 ### Do first next session:
+- [ ] Origin story video — WAITING ON KAYLI APPROVAL. Private link sent to her: https://youtu.be/J5g2ajONOz4. When she approves: schedule publish date (sooner than May 19), then clip 3 shorts from /Users/raquelcovey/Downloads/Origin Story Long(Video).mp4
 - [ ] Misc May 7 content — WAITING ON KAYLI EDITS. When edits return: update captions in HTML, add to CSVs, schedule. Google Doc: https://docs.google.com/document/d/1r4vlJDWptNRYeOCLYBUb30FlYU9UmMZe-cQCOp0AYS0
 - [ ] Move Google Doc into shared Kayli folder and send to her (Raquel does this)
 - [ ] Upload listen-looped-1hour-youtube.mp4 to YouTube — file at clips/listen-looped-1hour-youtube.mp4, title: "Beaver Dam Water Sounds — 1 Hour of Nature Sounds for Focus, Sleep & Relaxation"
 - [ ] YouTube banner — Kayli to shoot real photos/footage for it; Claude will design using real assets once ready
-- [ ] Canva carousel workflow — upload real photos to Canva, Claude places them + writes copy via MCP
 - [ ] Write captions for Garden/food folder content (23 files) — Claude ready to go, just say go
 - [ ] Facebook custom username — check periodically; when available, Claude updates website link in 30 seconds
 
