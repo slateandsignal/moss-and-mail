@@ -55,6 +55,13 @@ All posts scheduled in Publer: **May 6 — June 17, 2026**
 
 **NOTE:** Publer API only returns ~15 posts regardless of how many are scheduled — this is a Publer API limitation, NOT a problem. Use screenshots to verify schedule, not API.
 
+**Walnut Hill series — updated May 12, 2026:**
+- Series expanded to 4 parts (was 3). All 4 files fully edited by Raquel.
+- Instagram CSV: Parts 1-4 scheduled May 14, 16, 17, 18. Captions corrected.
+- Facebook CSV: Parts 1, 3, 4 added (May 14, 17, 18 at noon).
+- TikTok: Manual posting guide at WALNUT_HILL_TIKTOK_GUIDE.md
+- Part 4 files: Desktop/Walnut Hill Part 4/ — Instagram: walnut-hill-part4.mp4, YT Short: Walnut Hill Part 4 YT Short.mp4
+
 **Still needs manual action in Publer:**
 - May 21 TikTok — confirm clip1-mason-jar-vertical.mp4 is attached
 - May 23 Instagram Reel — add manually: clip3-screen-realization-vertical.mp4, 8:00 AM
