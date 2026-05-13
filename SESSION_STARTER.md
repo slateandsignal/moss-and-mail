@@ -44,27 +44,76 @@ Last updated: 2026-05-07 (end of session — evening)
 
 ---
 
-## Content Schedule — DONE, DO NOT REDO
-All posts scheduled in Publer: **May 6 — June 17, 2026**
-- Instagram: posts scheduled
-- TikTok: posts scheduled
-- YouTube Shorts: scheduled manually in Publer UI
-- YouTube Long-form: some need manual upload (838MB unboxing file too large for API)
-- CSVs saved at: MossAndMail_Publer_Instagram.csv, MossAndMail_Publer_TikTok.csv, MossAndMail_Publer_YouTube.csv, MossAndMail_Publer_Facebook.csv
-- CSV archive: /Users/raquelcovey/Projects/MossAndMail/csv-archive/ (dated backups)
+## Content Schedule — STATUS AS OF MAY 12, 2026
 
-**NOTE:** Publer API only returns ~15 posts regardless of how many are scheduled — this is a Publer API limitation, NOT a problem. Use screenshots to verify schedule, not API.
+### ✅ FULLY DONE — DO NOT REDO
+**YouTube — ALL handled via YouTube Data API script (NOT Publer):**
+- Walnut Hill Part 1/4: private, auto-publishes May 14 8am MDT ✅
+- Walnut Hill Part 2/4: private, auto-publishes May 16 9am MDT ✅
+- Walnut Hill Part 3/4: private, auto-publishes May 17 9am MDT ✅
+- Walnut Hill Part 4/4: private, auto-publishes May 18 8am MDT ✅
+- Old Part 1/3 video: set to private permanently (will NOT publish) ✅
+- Listen 1-hour video: live and public ✅
+- Beaver Hike, Book Review, Unboxing: all live/scheduled ✅
 
-**Walnut Hill series — updated May 12, 2026:**
-- Series expanded to 4 parts (was 3). All 4 files fully edited by Raquel.
-- Instagram CSV: Parts 1-4 scheduled May 14, 16, 17, 18. Captions corrected.
-- Facebook CSV: Parts 1, 3, 4 added (May 14, 17, 18 at noon).
-- TikTok: Manual posting guide at WALNUT_HILL_TIKTOK_GUIDE.md
-- Part 4 files: Desktop/Walnut Hill Part 4/ — Instagram: walnut-hill-part4.mp4, YT Short: Walnut Hill Part 4 YT Short.mp4
+**TikTok — REMOVED FROM PUBLER by Raquel. Post manually in TikTok app.**
+- Guide: WALNUT_HILL_TIKTOK_GUIDE.md (exact file, caption, sound, cover for each part)
 
-**Still needs manual action in Publer:**
-- May 21 TikTok — confirm clip1-mason-jar-vertical.mp4 is attached
-- May 23 Instagram Reel — add manually: clip3-screen-realization-vertical.mp4, 8:00 AM
+### ⚠️ STILL NEEDS PUBLER UPLOAD — DO FIRST NEXT SESSION
+The Walnut Hill posts for Instagram and Facebook are NOT yet in Publer.
+Upload-ready CSVs are at:
+- `UPLOAD_TODAY_Instagram.csv` — 4 posts (WH Parts 1-4, May 14/16/17/18)
+- `UPLOAD_TODAY_Facebook.csv` — 5 posts (WH Parts 1/3/4 + Yurt May 26 + Mammas May 30)
+
+**Files needed for Instagram upload (all on Desktop):**
+- Walnut Hill Part 1 all platforms → `Walnut Hill Part 1 (TikTok Video).mp4`
+- Walnut Hill Part 2 → `Walnut Hill Part 2  (TikTok Video).mp4`
+- Walnut Hill Part 3 → `walnut-hill-part3 (TikTok Video).mp4`
+- Walnut Hill Part 4 → `Walnut Hill Part4 (TikTok Video).mp4`
+
+**Files needed for Facebook upload (all on Desktop):**
+- Walnut Hill Part 1 all platforms → `Walnut Hill Part 1 (Facebook Video).mp4`
+- Walnut Hill Part 3 → `Walnut Hill Part 3 (Facebook Video).mp4`
+- Walnut Hill Part 4 → `Walnut Hill Part 4 FaceBook .mp4`
+- Publer Upload — May 2026 → `I just wanna live in a yurt.MP4`
+- Publer Upload — May 2026 → `(post 1) This is for the mammas.MP4`
+
+**✅ PUBLER BULK SCHEDULE NAVIGATION — CONFIRMED:**
+1. Go to **Create** tab (left sidebar)
+2. Click **"Bulk Options"**
+3. Click **"Import CSV"**
+4. Drag and drop your CSV file (or click to select)
+5. Wait for success notification (top-right corner)
+6. Go to **Notifications** tab → click the CSV notification
+7. Select your social account on the left
+8. Configure each post's scheduling method
+9. Scroll down → click **"Submit"**
+
+**FILES TO UPLOAD FOR INSTAGRAM** (4 posts): `UPLOAD_TODAY_Instagram.csv` + these 4 video files from Desktop:
+- `Walnut Hill Part 1 (TikTok Video).mp4`
+- `Walnut Hill Part 2  (TikTok Video).mp4` (double space)
+- `walnut-hill-part3 (TikTok Video).mp4` (all lowercase)
+- `Walnut Hill Part4 (TikTok Video).mp4` (no space before 4)
+
+**FILES TO UPLOAD FOR FACEBOOK** (5 posts): `UPLOAD_TODAY_Facebook.csv` + these 5 video files from Desktop:
+- `Walnut Hill Part 1 (Facebook Video).mp4`
+- `Walnut Hill Part 3 (Facebook Video).mp4`
+- `Walnut Hill Part 4 FaceBook .mp4` (capital B, trailing space — exact)
+- `I just wanna live in a yurt.MP4` (from Publer Upload — May 2026 folder)
+- `(post 1) This is for the mammas.MP4` (from Publer Upload — May 2026 folder)
+
+**DO INSTAGRAM FIRST, FACEBOOK SECOND — one CSV per upload session.**
+
+**All other Instagram posts (May 6–June 17): already in Publer ✅**
+**CSVs with correct filenames saved at:** MossAndMail_Publer_Instagram.csv, MossAndMail_Publer_Facebook.csv, MossAndMail_Publer_YouTube.csv
+**CSV archive:** /Users/raquelcovey/Projects/MossAndMail/csv-archive/
+
+### PUBLER API — WHAT WORKS AND WHAT DOESN'T
+- GET /api/v1/posts → ✅ reads scheduled posts
+- POST /api/v1/media → ✅ uploads video files to media library
+- PATCH /api/v1/posts/{id} → ✅ updates existing posts
+- POST /api/v1/posts → ❌ 404 — cannot create new posts via API
+- Bulk CSV upload is the ONLY way to create new posts in Publer
 
 **YouTube videos updated (May 3 session):**
 - Beaver Hike (live): description, tags, affiliate links ✅
@@ -80,6 +129,7 @@ All posts scheduled in Publer: **May 6 — June 17, 2026**
 | Publer IG Account ID | 69ee548a578cfba22c490081 |
 | Publer TikTok Account ID | 69ee5498b7b333b553b35bb2 |
 | Publer YouTube Account ID | 69ee5b1ea8efaa444defd05b |
+| Publer Facebook Account ID | 69fbf6c4be41ea90b1b459ef |
 | YouTube Data API | AIzaSyC_ET2j0RKNo-Sr8sHO9hRYQLqP1dKrUxY |
 | YouTube OAuth token | /Users/raquelcovey/Projects/MossAndMail/youtube_token.json |
 | Mailchimp API | 4eb88764e24c19d6240b51c94651ca2f-us7 (data center: us7) |

@@ -2,24 +2,14 @@
 
 ---
 
-## ⚠️ MANDATORY SESSION START — DO THIS BEFORE ANYTHING ELSE
+## SESSION START — LIGHTWEIGHT
 
-Every single session, before responding to any request, Claude MUST run all of these in order:
+Read `SESSION_STARTER.md` only. That's it. Do NOT read MASTER_TASK_LIST.md or MOSS_AND_MAIL_MASTER.html at session start — they are large files loaded only when needed.
 
-### Step 1 — Read the source of truth files
-- Read `SESSION_STARTER.md`
-- Read `MASTER_TASK_LIST.md`
-- Read `MOSS_AND_MAIL_MASTER.html` — this is where ALL captions live. Never rewrite captions. Never suggest rewriting captions. They were written by Claude and edited and approved by Kayli. They are final.
-
-### Step 2 — Check live Publer schedule
-Run this EVERY session before touching anything in Publer:
-```
-curl -s "https://app.publer.com/api/v1/posts?limit=100" -H "Authorization: Bearer-API d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b" -H "Publer-Workspace-Id: 69ee4e131454f4622d3ef523"
-```
-Parse the `posts` key (not `data`). Sort by `scheduled_at`. Show Raquel what's live before doing anything.
-
-### Step 3 — Report discrepancies only
-Compare live Publer schedule against the CSVs. Report what's missing, what's extra, what's wrong. Do NOT fix anything until Raquel approves each change one at a time.
+**Load on demand:**
+- `MASTER_TASK_LIST.md` — read only when Raquel asks about tasks or what's left to do
+- `MOSS_AND_MAIL_MASTER.html` — read only when working on captions or scheduling (2,700+ lines)
+- Publer API check — run only when about to schedule or change a Publer post (not at session start)
 
 ---
 
@@ -112,7 +102,11 @@ If Raquel says "I'm shutting down" or "should I save anything" — STOP everythi
 
 ## SCHEDULING RULE — ALWAYS CHECK BEFORE TOUCHING PUBLER
 
-NEVER schedule without first running the Publer API check above and comparing against CSVs.
+NEVER add, edit, or delete a Publer post without first running the API check and comparing against CSVs:
+```
+curl -s "https://app.publer.com/api/v1/posts?limit=100" -H "Authorization: Bearer-API d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b" -H "Publer-Workspace-Id: 69ee4e131454f4622d3ef523"
+```
+Parse the `posts` key (not `data`). Report discrepancies — do NOT fix anything until Raquel approves each change.
 
 ---
 
