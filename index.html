@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B372HQJPRH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B372HQJPRH');
+</script>
 <meta name="p:domain_verify" content="c42f141fb4b090d0e0b9d57fc25d4488"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +44,8 @@
   "sameAs": [
     "https://www.instagram.com/mossandmail",
     "https://www.tiktok.com/@mossandmail",
-    "https://www.youtube.com/@mossandmail",
-    "https://www.facebook.com/mossandmail"
+    "https://www.youtube.com/@kayliangeleaux",
+    "https://www.facebook.com/profile.php?id=61589083751248"
   ],
   "contactPoint": { "@type": "ContactPoint", "contactType": "Customer Service", "email": "kayli.angeleaux@mossandmail.com" }
 }
@@ -324,9 +333,11 @@ button { cursor: pointer; }
    SCROLL REVEAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .reveal {
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+.reveal.will-animate {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.85s ease, transform 0.85s ease;
 }
 .reveal.visible {
   opacity: 1;
@@ -1131,7 +1142,7 @@ footer {
       <span class="anchor-name">Always Inside — The Rest</span>
       <ul class="anchor-list">
         <li>A curated Spotify playlist to enjoy while opening your envelope</li>
-        <li>A "Letter to the Editor" question and answer (questions submitted by you on our social media pages)</li>
+        <li>An "Ask Kayli" Q&amp;A (questions submitted by you on our social media pages)</li>
         <li>A nature-inspired journaling prompt</li>
         <li>A simple, nourishing recipe</li>
         <li>A photo from the mountains or a watercolor from my children — one of a kind</li>
@@ -1256,33 +1267,14 @@ footer {
       Remove the fallback .btn-join link below once done.
       ═══════════════════════════════════════════════════
     -->
-    <!-- Waitlist email capture -->
-    <div class="waitlist-form reveal reveal-delay-3">
-      <label class="waitlist-form-label" for="waitlist-email">Join the waitlist — be first to know when subscriptions open</label>
-      <div class="waitlist-input-row">
-        <input
-          class="waitlist-input"
-          type="email"
-          id="waitlist-email"
-          name="EMAIL"
-          placeholder="Your email address"
-          required
-          autocomplete="email"
-        >
-        <button class="waitlist-btn" type="button" onclick="joinWaitlist()">Join</button>
-      </div>
-      <!-- Bot protection — do not remove -->
-      <div style="position:absolute;left:-5000px;" aria-hidden="true">
-        <input type="text" id="waitlist-bot-field" name="b_0ced347425816f6636ddecf11_ab002c9324" tabindex="-1" value="">
-      </div>
-      <p class="waitlist-fine" id="waitlist-msg">No spam, ever. Unsubscribe any time.</p>
+    <div class="reveal reveal-delay-3" style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+      <a href="https://moss-mail.myshopify.com/products/moss-mail-monthly-subscription" class="btn-join" target="_blank" rel="noopener">
+        Subscribe — $11 / month
+      </a>
+      <p class="waitlist-fine">Moss &amp; Mail ships worldwide. International rates apply at checkout.</p>
     </div>
 
-    <div class="shopify-buy-button-placeholder reveal reveal-delay-3" style="margin-top: 2rem;">
-      <!-- SHOPIFY EMBED CODE GOES HERE — replace this section when Shopify is ready -->
-    </div>
-
-    <a href="#subscribe" class="gift-link reveal" style="margin-top: 1.5rem;">
+    <a href="https://moss-mail.myshopify.com/products/moss-mail-monthly-subscription" class="gift-link reveal" style="margin-top: 1.5rem;" target="_blank" rel="noopener">
       Give as a gift →
     </a>
   </div>
@@ -1388,7 +1380,7 @@ footer {
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>All sales are final — we do not offer refunds. However, if your envelope arrives damaged, we will send you a replacement right away. Simply email us at <a href="mailto:kayli.angeleaux@mossandmail.com" style="color: var(--moss); text-decoration: underline;">kayli.angeleaux@mossandmail.com</a> with a photo of your damaged envelope and we will take care of you.</p>
+          <p>All sales are final — we do not offer refunds. However, if your envelope arrives damaged, we will send you a replacement right away. Simply email <a href="mailto:kayli.angeleaux@mossandmail.com" style="color: var(--moss); text-decoration: underline;">kayli.angeleaux@mossandmail.com</a> with a photo of your damaged envelope and we will take care of you.</p>
         </div>
       </div>
     </div>
@@ -1407,8 +1399,8 @@ footer {
       <div class="footer-socials">
         <a href="https://www.instagram.com/mossandmail" rel="noopener" target="_blank">Instagram</a>
         <a href="https://www.tiktok.com/@mossandmail" rel="noopener" target="_blank">TikTok</a>
-        <a href="https://www.youtube.com/@mossandmail" rel="noopener" target="_blank">YouTube</a>
-        <a href="https://www.facebook.com/mossandmail" rel="noopener" target="_blank">Facebook</a>
+        <a href="https://www.youtube.com/@kayliangeleaux" rel="noopener" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/profile.php?id=61589083751248" rel="noopener" target="_blank">Facebook</a>
       </div>
     </div>
 
@@ -1430,8 +1422,8 @@ footer {
       <div class="footer-socials" style="margin-top: 1.25rem;">
         <a href="https://www.instagram.com/mossandmail" rel="noopener" target="_blank">Instagram</a>
         <a href="https://www.tiktok.com/@mossandmail" rel="noopener" target="_blank">TikTok</a>
-        <a href="https://www.youtube.com/@mossandmail" rel="noopener" target="_blank">YouTube</a>
-        <a href="https://www.facebook.com/mossandmail" rel="noopener" target="_blank">Facebook</a>
+        <a href="https://www.youtube.com/@kayliangeleaux" rel="noopener" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/profile.php?id=61589083751248" rel="noopener" target="_blank">Facebook</a>
       </div>
     </div>
   </div>
@@ -1451,29 +1443,18 @@ footer {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 /* ── Waitlist form ── */
-function joinWaitlist() {
-  var email = document.getElementById('waitlist-email').value;
-  var msg = document.getElementById('waitlist-msg');
-  if (!email || !email.includes('@')) {
-    document.getElementById('waitlist-email').focus();
-    return;
-  }
-  var botField = document.getElementById('waitlist-bot-field').value;
-  var url = 'https://us7.list-manage.com/subscribe/post-json?u=0ced347425816f6636ddecf11&id=ab002c9324&EMAIL='
-    + encodeURIComponent(email)
-    + '&b_0ced347425816f6636ddecf11_ab002c9324=' + encodeURIComponent(botField)
-    + '&c=_mcCallback';
-  window._mcCallback = function(data) {
-    if (data.result === 'success') {
-      document.getElementById('waitlist-email').value = '';
-      msg.textContent = 'You’re on the list — thank you for being here.';
-    } else {
-      msg.textContent = data.msg ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.';
+var _wf = document.getElementById('waitlist-form');
+if (_wf) {
+  _wf.addEventListener('submit', function(e) {
+    var email = document.getElementById('waitlist-email').value.trim();
+    if (!email || !email.includes('@')) {
+      e.preventDefault();
+      document.getElementById('waitlist-email').focus();
+      return;
     }
-  };
-  var s = document.createElement('script');
-  s.src = url;
-  document.head.appendChild(s);
+    document.getElementById('waitlist-wrap').style.display = 'none';
+    document.getElementById('waitlist-success').style.display = 'block';
+  });
 }
 
 /* ── Nav scroll behavior ── */
@@ -1494,6 +1475,7 @@ nav.querySelectorAll('.nav-links a').forEach(link => {
 
 /* ── Scroll reveal ── */
 const revealEls = document.querySelectorAll('.reveal');
+revealEls.forEach(el => el.classList.add('will-animate'));
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1501,7 +1483,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 revealEls.forEach(el => revealObserver.observe(el));
 
 /* ── FAQ accordion ── */
