@@ -1,0 +1,8 @@
+KEYS.md
+.github_token
+*.json
+shopify_token.json
+youtube_token.json
+youtube_oauth_client.json
+client_secret_*.json
+.DS_Store

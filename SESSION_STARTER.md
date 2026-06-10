@@ -1,261 +1,165 @@
 # Moss & Mail — Session Starter
-**Paste this at the start of every new Claude Code session.**
-Last updated: 2026-05-07 (end of session — evening)
+Last updated: 2026-05-21
+**Read this at the start of every Moss & Mail session.**
 
 ---
 
 ## Who We Are
-- **Raquel** — operations, edits in Canva + EDITS app, schedules all content, manages tools, runs Claude sessions. Creates all thumbnails (has template already built).
-- **Kayli Angeleaux** — films footage, reviews/approves copy before it goes out. Hands off everything else. Email: kayli.angeleaux@mossandmail.com
-- **Claude** — writes all captions, descriptions, hashtags, builds Shopify, manages API calls, edits website
+- **Raquel** — edits video (CapCut/EDITS app), formats in Canva, manages tools, runs Claude sessions, creates all thumbnails
+- **Kayli Angeleaux** — films footage, reviews/approves copy in Google Docs. Email: kayli.angeleaux@mossandmail.com
+- **Claude** — writes all copy, manages APIs, schedules via Blotato, edits website
 
 ## The Business
-**Moss & Mail** — monthly handwritten letter subscription. Kayli writes a letter by hand, composes it in nature, seals it with wax, and mails it with: a handwritten letter (vulnerable, honest — like a letter from a friend), a curated Spotify playlist QR code, a "Letter to the Editor" Q&A from the community, a nature-inspired journaling prompt, a simple nourishing recipe, and a photo from the mountains OR an original watercolor from Kayli's children (one of a kind). The rest is a surprise — chosen for the season, the month, the mood. Some things come back. Some only come once.
+**Moss & Mail** — monthly handwritten letter subscription. Kayli writes by hand, composes in nature, seals with wax. Each envelope includes: handwritten letter, Spotify playlist QR code, "Letter to the Editor" Q&A, nature journaling prompt, recipe, photo or children's watercolor, seasonal surprise.
 
 **Launch date: June 8, 2026**
-**Website:** mossandmail.com (live, hosted on GitHub Pages)
-**GitHub repo:** github.com/slateandsignal/moss-and-mail (account: slateandsignal)
-**Site files on Mac:** /Users/raquelcovey/Projects/MossAndMail-Site/ — main file is index.html
+**Website:** mossandmail.com (GitHub Pages — repo: github.com/slateandsignal/moss-and-mail)
+**Site files:** /Users/raquelcovey/Projects/MossAndMail-Site/index.html
 
 ---
 
 ## Platform Status
-| Platform | Status |
-|----------|--------|
-| Instagram | Live @mossandmail — connected to Publer |
-| TikTok | Live @mossandmail — connected to Publer |
-| YouTube | Live @kayliangeleaux — connected to Publer |
-| Facebook | Business Page LIVE — "Moss & Mail" — connected to Publer ✅ |
-| Pinterest | Handle claimed — NOT connected to Publer |
-| Linktree | Live — connected to all active platforms |
-| Metricool | NOT IN USE — dropped due to platform limitations. Publer only. |
+| Platform | Handle/Page | Scheduler | Notes |
+|---|---|---|---|
+| Instagram | @mossandmail | Blotato | Live |
+| TikTok | @mossandmail | Blotato (music still added in-app) | Live |
+| YouTube | @kayliangeleaux | YouTube Data API scripts | Live |
+| Facebook | Moss & Mail page | Blotato | Live |
+| Pinterest | @kayliangeleaux | MANUAL for 2 weeks, then Blotato | Warming up — 1 pin/day |
+| Linktree | — | — | Live, all platforms linked |
 
-**Facebook Page details:**
-- Name: Moss & Mail
-- Category: Retail Company
-- Bio: "Monthly handwritten letters by Kayli Angeleaux. A recipe, a playlist, a nature prompt, and something that slows things down. mossandmail.com"
-- Profile photo: Kayli's portrait ✅
-- Website link: mossandmail.com ✅
-- Contact email: kayli.angeleaux@mossandmail.com ✅
-- First post: snail video ✅
-- Cover photo: MISSING — needs envelope content shot (820×312px)
-- Publer connection: ✅ Connected May 6
-- Linktree: ✅ Facebook URL added May 7
+**Pinterest warm-up guide:** Google Drive — "Pinterest Manual Posting Guide"
+**TikTok note:** Music must still be added inside TikTok app (licensing). Scheduling itself via Blotato is fine.
 
 ---
 
-## Content Schedule — STATUS AS OF MAY 12, 2026
+## Blotato Account IDs
+| Platform | Account ID | Extra |
+|---|---|---|
+| Instagram | 48587 | — |
+| TikTok | 43393 | — |
+| YouTube | 37494 | — |
+| Pinterest | 6736 | See board IDs below |
+| Facebook | 33099 | Page ID: 1093491527182659 |
 
-### ✅ FULLY DONE — DO NOT REDO
-**YouTube — ALL handled via YouTube Data API script (NOT Publer):**
-- Walnut Hill Part 1/4: private, auto-publishes May 14 8am MDT ✅
-- Walnut Hill Part 2/4: private, auto-publishes May 16 9am MDT ✅
-- Walnut Hill Part 3/4: private, auto-publishes May 17 9am MDT ✅
-- Walnut Hill Part 4/4: private, auto-publishes May 18 8am MDT ✅
-- Old Part 1/3 video: set to private permanently (will NOT publish) ✅
-- Listen 1-hour video: live and public ✅
-- Beaver Hike, Book Review, Unboxing: all live/scheduled ✅
-
-**TikTok — REMOVED FROM PUBLER by Raquel. Post manually in TikTok app.**
-- Guide: WALNUT_HILL_TIKTOK_GUIDE.md (exact file, caption, sound, cover for each part)
-
-### ⚠️ STILL NEEDS PUBLER UPLOAD — DO FIRST NEXT SESSION
-The Walnut Hill posts for Instagram and Facebook are NOT yet in Publer.
-Upload-ready CSVs are at:
-- `UPLOAD_TODAY_Instagram.csv` — 4 posts (WH Parts 1-4, May 14/16/17/18)
-- `UPLOAD_TODAY_Facebook.csv` — 5 posts (WH Parts 1/3/4 + Yurt May 26 + Mammas May 30)
-
-**Files needed for Instagram upload (all on Desktop):**
-- Walnut Hill Part 1 all platforms → `Walnut Hill Part 1 (TikTok Video).mp4`
-- Walnut Hill Part 2 → `Walnut Hill Part 2  (TikTok Video).mp4`
-- Walnut Hill Part 3 → `walnut-hill-part3 (TikTok Video).mp4`
-- Walnut Hill Part 4 → `Walnut Hill Part4 (TikTok Video).mp4`
-
-**Files needed for Facebook upload (all on Desktop):**
-- Walnut Hill Part 1 all platforms → `Walnut Hill Part 1 (Facebook Video).mp4`
-- Walnut Hill Part 3 → `Walnut Hill Part 3 (Facebook Video).mp4`
-- Walnut Hill Part 4 → `Walnut Hill Part 4 FaceBook .mp4`
-- Publer Upload — May 2026 → `I just wanna live in a yurt.MP4`
-- Publer Upload — May 2026 → `(post 1) This is for the mammas.MP4`
-
-**✅ PUBLER BULK SCHEDULE NAVIGATION — CONFIRMED:**
-1. Go to **Create** tab (left sidebar)
-2. Click **"Bulk Options"**
-3. Click **"Import CSV"**
-4. Drag and drop your CSV file (or click to select)
-5. Wait for success notification (top-right corner)
-6. Go to **Notifications** tab → click the CSV notification
-7. Select your social account on the left
-8. Configure each post's scheduling method
-9. Scroll down → click **"Submit"**
-
-**FILES TO UPLOAD FOR INSTAGRAM** (4 posts): `UPLOAD_TODAY_Instagram.csv` + these 4 video files from Desktop:
-- `Walnut Hill Part 1 (TikTok Video).mp4`
-- `Walnut Hill Part 2  (TikTok Video).mp4` (double space)
-- `walnut-hill-part3 (TikTok Video).mp4` (all lowercase)
-- `Walnut Hill Part4 (TikTok Video).mp4` (no space before 4)
-
-**FILES TO UPLOAD FOR FACEBOOK** (5 posts): `UPLOAD_TODAY_Facebook.csv` + these 5 video files from Desktop:
-- `Walnut Hill Part 1 (Facebook Video).mp4`
-- `Walnut Hill Part 3 (Facebook Video).mp4`
-- `Walnut Hill Part 4 FaceBook .mp4` (capital B, trailing space — exact)
-- `I just wanna live in a yurt.MP4` (from Publer Upload — May 2026 folder)
-- `(post 1) This is for the mammas.MP4` (from Publer Upload — May 2026 folder)
-
-**DO INSTAGRAM FIRST, FACEBOOK SECOND — one CSV per upload session.**
-
-**All other Instagram posts (May 6–June 17): already in Publer ✅**
-**CSVs with correct filenames saved at:** MossAndMail_Publer_Instagram.csv, MossAndMail_Publer_Facebook.csv, MossAndMail_Publer_YouTube.csv
-**CSV archive:** /Users/raquelcovey/Projects/MossAndMail/csv-archive/
-
-### PUBLER API — WHAT WORKS AND WHAT DOESN'T
-- GET /api/v1/posts → ✅ reads scheduled posts
-- POST /api/v1/media → ✅ uploads video files to media library
-- PATCH /api/v1/posts/{id} → ✅ updates existing posts
-- POST /api/v1/posts → ❌ 404 — cannot create new posts via API
-- Bulk CSV upload is the ONLY way to create new posts in Publer
-
-**YouTube videos updated (May 3 session):**
-- Beaver Hike (live): description, tags, affiliate links ✅
-- Book Review (private, scheduled May 27): description, tags, affiliate links ✅
+**Pinterest Board IDs:**
+| Board | ID |
+|---|---|
+| Letters and Slow Living | 1117103951261552036 |
+| Moss & Mail - The Envelope | 1117103951261552040 |
+| Recipes Worth Writing Down | 1117103951261552047 |
+| Seeds and Growing Things | 1117103951261552042 |
+| The Nature Prompt | 1117103951261552044 |
+| The Slow Morning | 1117103951261552052 |
+| What I'm Reading | 1117103951261552045 |
 
 ---
 
 ## API Keys & Tools
-| Tool | Key / ID |
-|------|----------|
-| Publer API | d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b |
-| Publer Workspace ID | 69ee4e131454f4622d3ef523 |
-| Publer IG Account ID | 69ee548a578cfba22c490081 |
-| Publer TikTok Account ID | 69ee5498b7b333b553b35bb2 |
-| Publer YouTube Account ID | 69ee5b1ea8efaa444defd05b |
-| Publer Facebook Account ID | 69fbf6c4be41ea90b1b459ef |
-| YouTube Data API | AIzaSyC_ET2j0RKNo-Sr8sHO9hRYQLqP1dKrUxY |
-| YouTube OAuth token | /Users/raquelcovey/Projects/MossAndMail/youtube_token.json |
-| Mailchimp API | 4eb88764e24c19d6240b51c94651ca2f-us7 (data center: us7) |
-| Mailchimp list u= | 0ced347425816f6636ddecf11 |
-| Mailchimp list id= | ab002c9324 |
-| GitHub token | /Users/raquelcovey/Projects/MossAndMail/.github_token — rotates July 21, 2026 |
-| Shopify Admin Token | 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 |
+
+All keys are in **KEYS.md** (local only, gitignored — never committed to git).
+Read KEYS.md for all API keys, workspace IDs, and account IDs.
+
+Non-sensitive references:
+| Tool | Value |
+|---|---|
 | Shopify Shop | moss-mail.myshopify.com |
 | Shopify Product ID | 8821049327794 |
-| Shopify Domestic Variant ID | 47383030825138 ($11.00/mo) |
-| Shopify International Variant ID | 47392294928562 ($12.70/mo) |
+| Mailchimp data center | us7 |
+| Mailchimp list ID | ab002c9324 |
+| GitHub token file | /Users/raquelcovey/Projects/MossAndMail/.github_token — rotates July 21, 2026 |
 
-**Note:** Publer API key resets when subscription renews — regenerate from Settings → Access & Login → Manage API Keys
-
----
-
-## Mailchimp — WORKING ✅
-- Account: Standard plan ($13/mo)
-- Welcome automation active — subject: "You're on the list — thank you for being here"
-- Domain authenticated via GoDaddy (SPF + DKIM) — emails go to inbox, not junk
-- Waitlist form on mossandmail.com: CONFIRMED WORKING — submits silently, shows "You're on the list" in-page. Confirmed May 5.
+**Publer API limits:** Can only READ and UPDATE posts. Cannot CREATE. CSV bulk upload is the only way to create new posts in Publer. Blotato is now the primary scheduling tool.
+**Publer API key resets on subscription renewal** — regenerate from Settings → Access & Login → Manage API Keys.
 
 ---
 
-## Website — WORKING ✅
-- All text visible, reveal animations working, mobile parallax fixed
-- Waitlist form working (curly quote SyntaxError fixed May 5)
-- Pinterest domain verification in place
-- Facebook link updated to real URL (profile.php?id=61589083751248) — May 7
-- YouTube link corrected to @kayliangeleaux (channel handle, not @mossandmail) — May 7
+## Tool Status
+| Tool | Status |
+|---|---|
+| Mailchimp | ✅ Working — welcome automation active, domain authenticated. Launch email sent June 9 to 26 subscribers. |
+| Website | ✅ Live — subscribe button links to Shopify, all links verified June 9 |
+| Shopify | ✅ LIVE — product active, Shopify Payments set up, Seal Subscriptions installed June 9. Taking orders. |
+| Google Drive | ✅ Connected |
+| Blotato | ✅ Connected — all 5 platforms |
+| Pinterest | ⏳ Manual warm-up in progress — automate after 100+ monthly views |
 
 ---
 
-## Shopify — UPDATED, STILL NEEDS FINISHING
-- Store: Moss & Mail (moss-mail.myshopify.com)
-- Seal Subscriptions app: installed
-- Product: "Snail Mail Letter Subscription" — Status: DRAFT — ID: 8821049327794
-- Domestic: $11.00/month | International: $12.70/month
-- STILL NEEDED: Seal Subscriptions billing rule, Shopify Payments activation, Draft→Active, product photos
-- Address/label printing: use Pirateship — export Shopify orders CSV monthly, upload to Pirateship
+## Content & Scheduling Status (as of May 21, 2026)
+- Instagram: scheduled through June 17 in Publer ✅
+- TikTok: post manually in-app (music requirement)
+- YouTube: Walnut Hill Parts 1-4 published, Unboxing scheduled May 25 ✅
+- Facebook: Walnut Hill posts need uploading — CSVs ready in mossandmail folder
+- Pinterest: warming up — 1 pin/day manually, guide in Google Drive
+
+## Raw Content Waiting to Be Edited
+Location: Desktop → "Raw Content to Edit"
+- Getting Rhubarb (13 clips)
+- More Gardening (8 clips — radish, strawberries, cilantro, mountains)
+- Bridal Veil Hike (20 clips — waterfall hike)
+- Cleaning (7 clips)
+- Leaves for the Garden (7 clips)
+- Raised Beds (13 clips — timelapse, flowers, tomato, thyme)
+- Untouched footage.mov + Untouched footage 2.mov
+
+**Claude to build a content plan for this folder — tells Raquel exactly what to edit and what it's for.**
 
 ---
 
-## Google Drive — CONNECTED ✅
-- Access confirmed and working
-- Files found: Moss_Mail_Platform_Setup_Guide, All Captions doc
-- PLANNED: Analytics folder + Weekly Performance Report sheet (not yet built)
-- Sunday analytics agent: planned, not yet built — needs Publer CSV export workflow
+## Pending Tasks
 
----
-
-## Thumbnails
-**Raquel creates all thumbnails** — she has a Canva template already built. Claude does NOT write thumbnail briefs or create thumbnails.
-
----
-
-## Consulting Business — FUTURE PROJECT
-Full details: /Users/raquelcovey/Projects/Consulting/SESSION_STARTER.md
-- Market rate: $10,000–$15,000 full launch package
-- Do NOT start until Moss & Mail launches (June 8, 2026)
-
----
-
-## Roles Reminder for Claude
-- Write captions, descriptions, hashtags, YouTube titles/tags
-- Make Publer API calls to schedule posts
-- Edit website (index.html) locally — push via git
-- ALWAYS check Publer before scheduling — run GET /api/v1/posts first
-- When editing JS: verify bytes with python3 rb mode — never trust visual inspection for quote characters
-- NEVER suggest Metricool — Publer only
-
----
-
-## Pending — What's Left To Do
-
-### Do first next session:
-- [ ] Origin story video — WAITING ON KAYLI APPROVAL. Private link sent to her: https://youtu.be/J5g2ajONOz4. When she approves: schedule publish date (sooner than May 19), then clip 3 shorts from /Users/raquelcovey/Downloads/Origin Story Long(Video).mp4
-- [ ] Misc May 7 content — WAITING ON KAYLI EDITS. When edits return: update captions in HTML, add to CSVs, schedule. Google Doc: https://docs.google.com/document/d/1r4vlJDWptNRYeOCLYBUb30FlYU9UmMZe-cQCOp0AYS0
-- [ ] Move Google Doc into shared Kayli folder and send to her (Raquel does this)
-- [ ] Upload listen-looped-1hour-youtube.mp4 to YouTube — file at clips/listen-looped-1hour-youtube.mp4, title: "Beaver Dam Water Sounds — 1 Hour of Nature Sounds for Focus, Sleep & Relaxation"
-- [ ] YouTube banner — Kayli to shoot real photos/footage for it; Claude will design using real assets once ready
-- [ ] Write captions for Garden/food folder content (23 files) — Claude ready to go, just say go
-- [ ] Facebook custom username — check periodically; when available, Claude updates website link in 30 seconds
-
-### Build next session:
-- [ ] Google Drive Analytics folder + Weekly Performance Report sheet
-- [ ] Sunday analytics agent (Publer CSV export → Drive → auto-report)
-- [ ] GA4 + analytics report — REMIND RAQUEL ~June 7, 2026. Add Google Analytics to website, then build combined website + social weekly report.
+### Claude handles:
+- [ ] Raw content plan for Desktop → "Raw Content to Edit" folder
+- [ ] Kayli's monthly fulfillment workflow (Google Doc)
+- [ ] Shopify setup guide for Kayli (Google Doc)
+- [ ] Email templates — first 3 months of subscriber emails
+- [ ] Pinterest pins — waiting on Raquel's stills document
+- [ ] Facebook Walnut Hill posts — upload CSVs (MossAndMail_Publer_Facebook.csv)
+- [x] GA4 — added to website, tracking active (G-B372HQJPRH)
 
 ### Waiting on Kayli:
-- [ ] Misc May 7 captions — Google Doc sent for her edits
-- [ ] Facebook cover photo — needs envelope content shot (820×312px)
-- [ ] Google Business verification: Kayli films 3-minute video
-- [ ] Launch day video (June 8): needs to be filmed
-- [ ] Review video (June 12): needs to be filmed
+- [ ] Facebook cover photo (820×312px envelope shot)
+- [ ] Google Business verification (3-min video)
+- [ ] Launch day video (June 8)
+- [ ] Review video (June 12)
+- [ ] Monthly: a few sentences about the theme/feeling of each month's letter (for subscriber emails)
 
 ### Raquel manual:
-- [ ] Move May 7 Google Doc into shared Kayli folder and send it to her
-- [ ] Alt text: add to all scheduled Publer posts (text is in CSVs)
+- [ ] Pinterest: 1 pin/day until 100+ monthly views
+- [ ] Alt text: add to all scheduled Publer posts
 - [ ] Delete 2 test posts in Publer (June 30 dates)
-- [ ] YouTube long-form unboxing (838MB): upload manually via Publer Media Library
-- [ ] Frame.io: set up (~$15/mo) for footage sharing with Kayli
+- [ ] TikTok: add music in-app before posting
 
-### Shopify — next session:
-- [ ] Set up Seal Subscriptions billing rule
-- [ ] Activate Shopify Payments
-- [ ] Change product status Draft → Active
-- [ ] Add product photos
+---
+
+## Target Audience (Engagement Strategy)
+DO NOT reach out to similar mail clubs or subscription accounts.
+Reach people who have NEVER heard of a mail subscription.
+
+**Who we want:**
+- Busy moms craving a slower, more intentional life
+- Moms who want simple nourishing recipes
+- Moms seeking homeschool inspiration (especially Charlotte Mason)
+- Grandmothers raising or helping raise grandchildren
+- Women exhausted by hustle culture
+
+**How they find us:** Pinterest search, Instagram Reels, YouTube search — not through competitor engagement.
 
 ---
 
 ## Brand Colors
 Moss #889063 | Plum #481827 | Ivory #EBE2CF | Blush #E0A399 | Daffodil #FFDE7A | Coral #81666B
 
-## CRITICAL — Before Every Publer Scheduling Session
-Archive old CSV first, then update. New key:
-`curl -s "https://app.publer.com/api/v1/posts?limit=100" -H "Authorization: Bearer-API d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b" -H "Publer-Workspace-Id: 69ee4e131454f4622d3ef523"`
+---
 
-## Notes for Claude
-- Raquel is non-technical — walk through new tools completely, step by step
-- Always use Kayli's voice and language for copy — never generic subscription box language
+## Critical Rules for Claude
+- NEVER use TikTok watermarks on Instagram content
+- NEVER suggest Metricool
+- Always use Kayli's voice — never generic subscription box language
 - First 125 chars of every Instagram caption must contain a searchable keyword
+- When editing JS in index.html: verify with python3 rb mode — curly quotes break everything
+- GitHub API is network-blocked — edit files locally, give Raquel git commands
+- Canva connected: R.C Designs account
 - Publer API auth format: `Authorization: Bearer-API {key}` — NOT standard Bearer
-- GitHub API is network-blocked from Claude's sandbox — edit files locally, give Raquel git commands
-- Canva connected: R.C Designs account (Apple private relay email)
-- Competitor: "Moss & Moon Mail" by Maureen Miller on Facebook (~300 followers, not a major threat)
-- CRITICAL: Always verify JS edits with python3 rb mode — curly quotes are invisible but break everything
-- Engagement strategy: follow/engage adjacent communities (slow living, Charlotte Mason, bookstagram) NOT competitor letter clubs
-- Instagram strategy doc: /Users/raquelcovey/Projects/MossAndMail/INSTAGRAM_STRATEGY.md
+- Thumbnails: Raquel creates all of them — Claude does NOT write thumbnail briefs

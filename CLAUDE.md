@@ -102,35 +102,16 @@ If Raquel says "I'm shutting down" or "should I save anything" — STOP everythi
 
 ## SCHEDULING RULE — ALWAYS CHECK BEFORE TOUCHING PUBLER
 
-NEVER add, edit, or delete a Publer post without first running the API check and comparing against CSVs:
-```
-curl -s "https://app.publer.com/api/v1/posts?limit=100" -H "Authorization: Bearer-API d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b" -H "Publer-Workspace-Id: 69ee4e131454f4622d3ef523"
-```
+NEVER add, edit, or delete a Publer post without first running the API check and comparing against CSVs.
+Curl command and all API keys are in KEYS.md (gitignored — never committed).
 Parse the `posts` key (not `data`). Report discrepancies — do NOT fix anything until Raquel approves each change.
 
 ---
 
 ## API Keys
 
-### Publer
-Key: d2b0ecf66cecf5ab91cb4bfb28fe95a3d9c60bac9f675f5b
-Workspace ID: 69ee4e131454f4622d3ef523
-IG Account ID: 69ee548a578cfba22c490081
-TikTok Account ID: 69ee5498b7b333b553b35bb2
-YouTube Account ID: 69ee5b1ea8efaa444defd05b
-Note: Key resets when Publer subscription renews — regenerate from Settings → Access & Login → Manage API Keys
-
-### YouTube Data API
-Key: AIzaSyC_ET2j0RKNo-Sr8sHO9hRYQLqP1dKrUxY
-
-### Mailchimp
-Key: 4eb88764e24c19d6240b51c94651ca2f-us7
-Data center: us7
-
-### Shopify
-Shop: moss-mail.myshopify.com
-Access token: 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
-Product: Snail Mail Club — ID: 8821049327794, Variant ID: 47383030825138, Price: $12.99, Status: draft
+All API keys are stored in KEYS.md (local only, gitignored). Read that file for all keys.
+Never paste keys into CLAUDE.md or SESSION_STARTER.md.
 
 ---
 
