@@ -10,7 +10,7 @@ Last updated: 2026-05-21
 - **Claude** — writes all copy, manages APIs, schedules via Blotato, edits website
 
 ## The Business
-**Moss & Mail** — monthly handwritten letter subscription. Kayli writes by hand, composes in nature, seals with wax. Each envelope includes: handwritten letter, Spotify playlist QR code, "Letter to the Editor" Q&A, nature journaling prompt, recipe, photo or children's watercolor, seasonal surprise.
+**Moss & Mail** — monthly handwritten letter subscription. Kayli writes by hand, composes in nature, seals with wax. Each envelope includes: handwritten letter, Spotify playlist QR code, "Ask Kayli" Q&A, nature journaling prompt/conversation starter, recipe, photo or children's watercolor, seasonal surprise.
 
 **Launch date: June 8, 2026**
 **Website:** mossandmail.com (GitHub Pages — repo: github.com/slateandsignal/moss-and-mail)
@@ -130,6 +130,7 @@ Location: Desktop → "Raw Content to Edit"
 - [ ] Alt text: add to all scheduled Publer posts
 - [ ] Delete 2 test posts in Publer (June 30 dates)
 - [ ] TikTok: add music in-app before posting
+- [ ] Rotate exposed API keys (old keys visible in git history — not urgent but do soon): Mailchimp → Account → Extras → API Keys; Shopify → Settings → Apps → your app → rotate token. Update KEYS.md with new values after.
 
 ---
 
