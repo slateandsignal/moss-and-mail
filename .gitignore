@@ -6,3 +6,4 @@ youtube_token.json
 youtube_oauth_client.json
 client_secret_*.json
 .DS_Store
+SESSION_STARTER.md
