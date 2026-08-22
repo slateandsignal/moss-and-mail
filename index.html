@@ -496,19 +496,19 @@ h2.section-title {
 /* recipe photo pair inside whats-inside */
 .recipe-photos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 4rem auto 0;
   padding: 0 1.5rem;
 }
 .recipe-photos img {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 4/3;
   object-fit: cover;
   object-position: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 780px) {
   .recipe-photos { grid-template-columns: 1fr; }
 }
 
@@ -1127,7 +1127,6 @@ footer {
     poster="images/mud-puddle.jpg"
   >
     <source src="images/snail.mp4" type="video/mp4">
-    <source src="images/snail.MOV" type="video/quicktime">
   </video>
   <div class="video-break-overlay"></div>
   <p class="video-break-caption reveal">Slow down. Look closer.</p>
@@ -1161,21 +1160,28 @@ footer {
   </div>
 
   <!--
-    PHOTOS: Two sourdough bread photos
-    Rename your files to: images/sourdough-1.jpg and images/sourdough-2.jpg
+    PHOTOS: Three photos of the letters and envelope contents.
+    Files: images/letter-photo-1.jpg, letter-photo-2.jpg, letter-photo-3.jpg
+    Frames are 4:3 landscape and crop from the centre.
   -->
   <div class="recipe-photos">
     <img
-      src="images/sourdough-1.jpg"
-      alt="Freshly baked sourdough bread — Moss & Mail recipe card"
+      src="images/letter-photo-1.jpg"
+      alt="A handwritten Moss &amp; Mail letter with seed packet, recipe card and wax seal — monthly snail mail subscription — Moss &amp; Mail"
       loading="lazy"
       class="reveal"
     >
     <img
-      src="images/product-2026.png"
-      alt="Moss and Mail envelope contents spread out — letter, wax seal, recipe card, photo postcard"
+      src="images/letter-photo-2.jpg"
+      alt="A hand lifting the contents out of a wax-sealed green envelope — snail mail letter subscription — Moss &amp; Mail"
       loading="lazy"
       class="reveal reveal-delay-1"
+    >
+    <img
+      src="images/letter-photo-3.jpg"
+      alt="The full spread of one month's Moss &amp; Mail envelope — letter, tea, watercolour art, journaling prompt and recipe card — Moss &amp; Mail"
+      loading="lazy"
+      class="reveal reveal-delay-2"
     >
   </div>
 </section>
@@ -1189,8 +1195,7 @@ footer {
     loop
     playsinline
   >
-    <source src="images/stream.MOV" type="video/mp4">
-    <source src="images/stream.MOV" type="video/quicktime">
+    <source src="images/stream.mp4" type="video/mp4">
   </video>
   <div class="stream-parallax-overlay"></div>
   <p class="stream-parallax-caption reveal">"...come into the peace of wild things…" — Wendell Berry</p>
@@ -1207,7 +1212,7 @@ footer {
       -->
       <img
         class="about-photo-main"
-        src="images/Kayli-headshot.png"
+        src="images/Kayli-headshot.jpg"
         alt="Kayli Angeleaux, founder of Moss & Mail — Utah-based slow living advocate and letter writer"
         loading="lazy"
       >
