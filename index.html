@@ -756,6 +756,23 @@ h2.section-title {
   color: #6a4050;
 }
 
+/* Monthly envelope video */
+.envelope-unboxing {
+  width: min(100% - 2rem, 25rem);
+  margin: 2.75rem auto 0;
+  text-align: center;
+}
+.envelope-unboxing video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  background: #f5f0e8;
+}
+.envelope-unboxing figcaption {
+  margin: 0.85rem auto 0;
+}
+
 /* recipe photo pair inside whats-inside */
 .recipe-photos {
   display: grid;
@@ -1436,6 +1453,15 @@ footer {
     Files: images/letter-photo-1.jpg, letter-photo-2.jpg, letter-photo-3.jpg
     Frames are 4:3 landscape and crop from the centre.
   -->
+  <figure class="envelope-unboxing">
+    <video controls playsinline preload="none" width="720" height="900"
+      poster="images/envelope-unboxing-poster.jpg"
+      aria-label="Watch a past Moss &amp; Mail envelope being opened">
+      <source src="images/envelope-unboxing.mp4" type="video/mp4">
+    </video>
+    <figcaption class="body-text">Watch one past Moss &amp; Mail envelope being opened. A letter arrives every month, and the extras change with the season.</figcaption>
+  </figure>
+
   <div class="recipe-photos">
     <img
       src="images/letter-photo-1.jpg"
