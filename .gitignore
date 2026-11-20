@@ -1,9 +1,41 @@
-KEYS.md
+# ══════════════════════════════════════════════════════════════════
+#  Moss & Mail — PUBLIC repository. It serves mossandmail.com.
+#  Anything committed here is readable at mossandmail.com/<filename>.
+#
+#  This is a WHITELIST. Everything is ignored by default.
+#  Nothing can leak by accident. To publish a new website file,
+#  add an explicit "!" line for it below — and only do that if the
+#  file is genuinely meant to be public.
+# ══════════════════════════════════════════════════════════════════
+
+# 1. Ignore everything at the top level
+/*
+
+# 2. Publish only these website files
+!/.gitignore
+!/CNAME
+!/index.html
+!/robots.txt
+!/sitemap.xml
+!/llms.txt
+
+# 3. The images folder: allow the folder, then only real media inside it
+!/images/
+/images/*
+!/images/*.jpg
+!/images/*.jpeg
+!/images/*.JPEG
+!/images/*.JPG
+!/images/*.png
+!/images/*.PNG
+!/images/*.webp
+!/images/*.svg
+!/images/*.ico
+!/images/*.mp4
+!/images/*.MP4
+
+# 4. Never, under any circumstances
 .github_token
-*.json
-shopify_token.json
-youtube_token.json
-youtube_oauth_client.json
-client_secret_*.json
-.DS_Store
-SESSION_STARTER.md
+KEYS.md
+*.env
+**/.DS_Store

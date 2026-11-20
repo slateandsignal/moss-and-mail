@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://mossandmail.com/</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mossandmail.com/images/letter-photo-1.jpg</image:loc>
+      <image:title>A handwritten Moss &amp; Mail letter with recipe card and wax seal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mossandmail.com/images/letter-photo-2.jpg</image:loc>
+      <image:title>Lifting the contents from a wax-sealed Moss &amp; Mail envelope</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mossandmail.com/images/letter-photo-3.jpg</image:loc>
+      <image:title>One month of Moss &amp; Mail laid out in full</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mossandmail.com/images/Kayli-headshot.jpg</image:loc>
+      <image:title>Kayli Angeleaux, founder of Moss &amp; Mail</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://mossandmail.com/images/moss.jpeg</video:thumbnail_loc>
+      <video:title>A mountain stream in Utah where the Moss &amp; Mail letters are written</video:title>
+      <video:description>Water moving over mossy stones in the Utah mountains, where Kayli Angeleaux writes each month's Moss &amp; Mail letter by hand.</video:description>
+      <video:content_loc>https://mossandmail.com/images/stream.mp4</video:content_loc>
+      <video:publication_date>2026-08-22</video:publication_date>
+    </video:video>
   </url>
 </urlset>
