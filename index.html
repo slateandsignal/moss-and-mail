@@ -1792,6 +1792,26 @@ footer {
 </footer>
 
 <script>
+/* Keep the campaign tags when shoppers continue to Shopify. */
+const campaignParams = new URLSearchParams(window.location.search);
+const campaignFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+const shopOrigin = 'https://moss-mail.myshopify.com';
+
+if (campaignParams.get('utm_source')) {
+  document.querySelectorAll('a[href^="https://moss-mail.myshopify.com/"]').forEach(link => {
+    const destination = new URL(link.href);
+    if (destination.origin !== shopOrigin) return;
+
+    campaignFields.forEach(field => {
+      const value = campaignParams.get(field);
+      if (value && !destination.searchParams.has(field)) {
+        destination.searchParams.set(field, value);
+      }
+    });
+    link.href = destination.href;
+  });
+}
+
 /* ── Year ── */
 document.getElementById('year').textContent = new Date().getFullYear();
 
