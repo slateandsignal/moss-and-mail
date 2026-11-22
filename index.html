@@ -1337,6 +1337,28 @@ footer {
   white-space: nowrap;
   border: 0;
 }
+
+/* ── Email capture ────────────────────────────────────────── */
+.joinlist { padding-block: 5rem; background: var(--ivory, #EBE2CF); }
+.joinlist .prose { max-width: 34rem; margin: 0 auto; text-align: center;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.joinlist p.jl-lede { margin: 1.25rem 0 0; line-height: 1.7; }
+.jl-form { display: flex; flex-direction: column; gap: .75rem; margin-top: 2rem; }
+.jl-row { display: flex; gap: .75rem; flex-wrap: wrap; }
+.jl-row > * { flex: 1 1 12rem; min-width: 0; }
+.jl-form input[type="text"], .jl-form input[type="email"] {
+  font-family: inherit; font-size: 1rem; padding: .85rem 1rem;
+  border: 1px solid #B9A98F; background: #FBF7ED; color: #2B171E; border-radius: 0; width: 100%; }
+.jl-form input:focus-visible { outline: 2px solid #481827; outline-offset: 2px; }
+.jl-form button { font-family: inherit; font-size: .95rem; letter-spacing: .08em;
+  text-transform: uppercase; padding: .9rem 1.5rem; border: 0; cursor: pointer;
+  background: #481827; color: #EBE2CF; transition: background .2s; }
+.jl-form button:hover { background: #5e2234; }
+.jl-form button:disabled { opacity: .6; cursor: default; }
+.jl-note { font-size: .82rem; color: #6B5860; margin: .25rem 0 0; }
+.jl-msg { margin: 1rem 0 0; font-size: .95rem; min-height: 1.4em; }
+.jl-msg.ok { color: #5F6843; } .jl-msg.err { color: #481827; }
 </style>
 </head>
 <body>
@@ -1548,6 +1570,78 @@ footer {
 </section>
 
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SUBSCRIBE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ JOIN THE LIST ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="joinlist" id="letters">
+  <div class="prose">
+    <span class="eyebrow reveal">Letters from the mountain</span>
+    <h2 class="section-title reveal reveal-delay-1">A little of the letter,<br>before you decide.</h2>
+    <p class="jl-lede reveal reveal-delay-2">
+      Every so often I send out a recipe, a nature prompt and a note from my corner of the Utah mountains &mdash; the same things that go inside the envelope. No charge, and no need to join the club to get them.
+    </p>
+
+    <form class="jl-form reveal reveal-delay-3" id="jlForm" novalidate>
+      <div class="jl-row">
+        <input type="text" id="jlName" name="FNAME" placeholder="First name" autocomplete="given-name" aria-label="First name">
+        <input type="email" id="jlEmail" name="EMAIL" placeholder="Your email" autocomplete="email" required aria-label="Email address">
+      </div>
+      <button type="submit" id="jlBtn">Send me the letters</button>
+      <p class="jl-note">One or two a month. Unsubscribe whenever you like.</p>
+    </form>
+    <p class="jl-msg" id="jlMsg" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<script>
+(function () {
+  var f = document.getElementById("jlForm");
+  if (!f) return;
+  var U = "https://mossandmail.us7.list-manage.com/subscribe/post-json?u=0ced347425816f6636ddecf11&amp;id=ab002c9324";
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var msg = document.getElementById("jlMsg");
+    var btn = document.getElementById("jlBtn");
+    var email = document.getElementById("jlEmail").value.trim();
+    var name = document.getElementById("jlName").value.trim();
+    msg.className = "jl-msg"; msg.textContent = "";
+    if (!email || email.indexOf("@") < 1) {
+      msg.className = "jl-msg err";
+      msg.textContent = "That email does not look quite right. Would you check it?";
+      return;
+    }
+    btn.disabled = true; btn.textContent = "Sending...";
+    var cb = "jl_cb_" + Date.now();
+    window[cb] = function (data) {
+      btn.disabled = false; btn.textContent = "Send me the letters";
+      var ok = data &amp;&amp; data.result === "success";
+      msg.className = "jl-msg " + (ok ? "ok" : "err");
+      if (ok) {
+        msg.textContent = "Lovely. Check your inbox.";
+        f.reset();
+        if (window.gtag) gtag("event", "sign_up", { method: "letters_list" });
+      } else {
+        var t = (data &amp;&amp; data.msg ? String(data.msg) : "Something went wrong. Please try again.");
+        t = t.replace(/<[^>]*>/g, "");
+        if (t.indexOf("already subscribed") > -1) t = "You are already on the list. Lovely to have you.";
+        msg.textContent = t.replace(/^\d+\s*-\s*/, "");
+      }
+      delete window[cb];
+      if (sc.parentNode) sc.parentNode.removeChild(sc);
+    };
+    var sc = document.createElement("script");
+    sc.src = U + "&amp;EMAIL=" + encodeURIComponent(email) +
+             "&amp;FNAME=" + encodeURIComponent(name) +
+             "&amp;c=" + cb;
+    sc.onerror = function () {
+      btn.disabled = false; btn.textContent = "Send me the letters";
+      msg.className = "jl-msg err";
+      msg.textContent = "Could not reach the list just now. Please try again in a moment.";
+    };
+    document.body.appendChild(sc);
+  });
+})();
+</script>
+
 <section class="subscribe" id="subscribe">
   <div class="prose">
     <span class="eyebrow reveal">Join the letter club</span>
