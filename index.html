@@ -1580,67 +1580,24 @@ footer {
       Every so often I send out a recipe, a nature prompt and a note from my corner of the Utah mountains &mdash; the same things that go inside the envelope. No charge, and no need to join the club to get them.
     </p>
 
-    <form class="jl-form reveal reveal-delay-3" id="jlForm" novalidate>
+    <form class="jl-form reveal reveal-delay-3"
+          action="https://mossandmail.us7.list-manage.com/subscribe/post?u=0ced347425816f6636ddecf11&amp;id=ab002c9324"
+          method="post" target="_blank" rel="noopener" novalidate>
       <div class="jl-row">
-        <input type="text" id="jlName" name="FNAME" placeholder="First name" autocomplete="given-name" aria-label="First name">
-        <input type="email" id="jlEmail" name="EMAIL" placeholder="Your email" autocomplete="email" required aria-label="Email address">
+        <label class="sr-only" for="mce-FNAME">First name</label>
+        <input type="text" id="mce-FNAME" name="FNAME" placeholder="First name" autocomplete="given-name">
+        <label class="sr-only" for="mce-EMAIL">Email address</label>
+        <input type="email" id="mce-EMAIL" name="EMAIL" placeholder="Your email" autocomplete="email" required>
       </div>
-      <button type="submit" id="jlBtn">Send me the letters</button>
+      <!-- Mailchimp bot trap: a real person never fills this in -->
+      <div aria-hidden="true" style="position:absolute;left:-5000px;">
+        <input type="text" name="b_0ced347425816f6636ddecf11_ab002c9324" tabindex="-1" value="">
+      </div>
+      <button type="submit" name="subscribe" onclick="if(window.gtag){gtag('event','sign_up',{method:'letters_list'});}">Send me the letters</button>
       <p class="jl-note">One or two a month. Unsubscribe whenever you like.</p>
     </form>
-    <p class="jl-msg" id="jlMsg" role="status" aria-live="polite"></p>
   </div>
 </section>
-
-<script>
-(function () {
-  var f = document.getElementById("jlForm");
-  if (!f) return;
-  var U = "https://mossandmail.us7.list-manage.com/subscribe/post-json?u=0ced347425816f6636ddecf11&amp;id=ab002c9324";
-  f.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var msg = document.getElementById("jlMsg");
-    var btn = document.getElementById("jlBtn");
-    var email = document.getElementById("jlEmail").value.trim();
-    var name = document.getElementById("jlName").value.trim();
-    msg.className = "jl-msg"; msg.textContent = "";
-    if (!email || email.indexOf("@") < 1) {
-      msg.className = "jl-msg err";
-      msg.textContent = "That email does not look quite right. Would you check it?";
-      return;
-    }
-    btn.disabled = true; btn.textContent = "Sending...";
-    var cb = "jl_cb_" + Date.now();
-    window[cb] = function (data) {
-      btn.disabled = false; btn.textContent = "Send me the letters";
-      var ok = data &amp;&amp; data.result === "success";
-      msg.className = "jl-msg " + (ok ? "ok" : "err");
-      if (ok) {
-        msg.textContent = "Lovely. Check your inbox.";
-        f.reset();
-        if (window.gtag) gtag("event", "sign_up", { method: "letters_list" });
-      } else {
-        var t = (data &amp;&amp; data.msg ? String(data.msg) : "Something went wrong. Please try again.");
-        t = t.replace(/<[^>]*>/g, "");
-        if (t.indexOf("already subscribed") > -1) t = "You are already on the list. Lovely to have you.";
-        msg.textContent = t.replace(/^\d+\s*-\s*/, "");
-      }
-      delete window[cb];
-      if (sc.parentNode) sc.parentNode.removeChild(sc);
-    };
-    var sc = document.createElement("script");
-    sc.src = U + "&amp;EMAIL=" + encodeURIComponent(email) +
-             "&amp;FNAME=" + encodeURIComponent(name) +
-             "&amp;c=" + cb;
-    sc.onerror = function () {
-      btn.disabled = false; btn.textContent = "Send me the letters";
-      msg.className = "jl-msg err";
-      msg.textContent = "Could not reach the list just now. Please try again in a moment.";
-    };
-    document.body.appendChild(sc);
-  });
-})();
-</script>
 
 <section class="subscribe" id="subscribe">
   <div class="prose">
