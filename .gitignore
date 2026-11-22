@@ -19,7 +19,12 @@
 !/sitemap.xml
 !/llms.txt
 
-# 3. The images folder: allow the folder, then only real media inside it
+# 3. The viewfinder page (noindex, not linked from the site)
+!/viewfinder/
+/viewfinder/*
+!/viewfinder/index.html
+
+# 4. The images folder: allow the folder, then only real media inside it
 !/images/
 /images/*
 !/images/*.jpg
@@ -34,7 +39,7 @@
 !/images/*.mp4
 !/images/*.MP4
 
-# 4. Never, under any circumstances
+# 5. Never, under any circumstances
 .github_token
 KEYS.md
 *.env
